@@ -14,9 +14,14 @@ class Product(models.Model):
     def __str__(self):
         return self.title
 
-
 class Image(models.Model):
     url = models.URLField()
     image = models.ImageField(upload_to='images')
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='picture')
+
+
+class Category(models.Model):
+    name = models.CharField(max_length=50, verbose_name='Category name')
+    slug = models.SlugField(max_length=70, unique=True, verbose_name='Slug')
+    image = models.ImageField(upload_to='images/category', blank=True, null=True, verbose_name='Image')
 
