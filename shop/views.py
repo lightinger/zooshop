@@ -1,25 +1,35 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
+from . models import Category, Product
 
 def index(request):
-    return render(request, 'index.html')
+    context = {}
+    return render(request, 'index.html', context=context)
 
 
-def catalog(request):
-    return render(request, 'shop-left-sidebar.html')
+def catalog(request, **kwargs):
+    # category = get_object_or_404(Category, slug=kwargs.get('slug'))
+    # products = Product.objects.filter(categories=category)[:10]
+    context = {
+    }
+    return render(request, 'shop-left-sidebar.html', context=context)
 
 
 def about(request):
-    return render(request, 'about.html')
+    context = {}
+    return render(request, 'about.html', context=context)
 
 
 def contact(request):
-    return render(request, 'contact.html')
+    context = {}
+    return render(request, 'contact.html', context=context)
 
 
 def faq(request):
-    return render(request, 'faq.html')
+    context = {}
+    return render(request, 'faq.html', context=context)
 
 
 def product(request):
-    return render(request, 'product-details.html')
+    context = {}
+    return render(request, 'product-details.html', context=context)

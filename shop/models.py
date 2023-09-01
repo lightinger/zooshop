@@ -11,8 +11,14 @@ class Product(models.Model):
     description = models.TextField(blank=True, verbose_name='Description')
     # details = models.CharField(max_length=1000)
 
+    class Meta:
+        verbose_name = 'Product'
+        verbose_name_plural = 'Products'
+        ordering = ['title']
+
     def __str__(self):
         return self.title
+
 
 class Image(models.Model):
     url = models.URLField()
@@ -21,7 +27,7 @@ class Image(models.Model):
 
 
 class Category(models.Model):
-    name = models.CharField(max_length=50, verbose_name='Category name')
-    slug = models.SlugField(max_length=70, unique=True, verbose_name='Slug')
+    title = models.CharField(max_length=50, default='Title', verbose_name='Title')
+    slug = models.SlugField(max_length=100, unique=True, verbose_name='Slug')
     image = models.ImageField(upload_to='images/category', blank=True, null=True, verbose_name='Image')
 
