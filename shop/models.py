@@ -6,10 +6,10 @@ class Product(models.Model):
     slug = models.SlugField(max_length=255, unique=True, verbose_name='Slug')
     price = models.DecimalField(max_digits=12, decimal_places=2, blank=True, null=True, verbose_name='Price')
     old_price = models.DecimalField(max_digits=12, decimal_places=2, blank=True, null=True, verbose_name='Old Price')
-    # availability = models.BooleanField(default=True)
+    availability = models.BooleanField(default=True)
     article = models.DecimalField(max_digits=10, decimal_places=0, blank=True, null=True, verbose_name='Product Article')
     description = models.TextField(blank=True, verbose_name='Description')
-    # details = models.CharField(max_length=1000)
+    categories = models.ManyToManyField('Category', related_name='products')
 
     class Meta:
         verbose_name = 'Product'
