@@ -29,19 +29,21 @@ def get_product_links(page_url):
 
 
 def upload_images(images: list[str], product: Product) -> None:
-    for i, image in enumerate(images, start=1):
+    for i, image_url in enumerate(images, start=1):
         with requests.Session() as session:
-            response = session.get(image)
+            response = session.get(image_url)
             assert response.status_code == HTTPStatus.OK, 'Wrong status code'
 
-        with open(f'static/images/product/{product.slug}-{i}.jpg', 'wb') as file:
-            file.write(response.content)
-
-        Image.objects.create(
+        # Save the image to the Image model
+        image_instance = Image.objects.create(
             product=product,
-            image=f'images/product/{product.slug}-{i}.jpg',
-            url=image,
+            image=f'images/product/{product.slug}-{i}.jpg',  # Adjust the image path as needed
+            url=image_url,
         )
+
+        # Save the image file
+        with open(f'static/{image_instance.image.name}', 'wb') as file:
+            file.write(response.content)
 
 
 def process_product_link(product_link):

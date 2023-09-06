@@ -21,9 +21,10 @@ class Product(models.Model):
 
 
 class Image(models.Model):
-    url = models.URLField()
-    image = models.ImageField(upload_to='images')
-    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='picture')
+    product = models.ForeignKey('shop.Product', on_delete=models.CASCADE, related_name='images')
+    url = models.URLField(max_length=512, verbose_name='Image URL')
+    image = models.ImageField(upload_to='images/product', max_length=300)
+
 
 
 class Category(models.Model):
