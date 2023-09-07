@@ -6,10 +6,11 @@ class Product(models.Model):
     slug = models.SlugField(max_length=255, unique=True, verbose_name='Slug')
     price = models.DecimalField(max_digits=12, decimal_places=2, blank=True, null=True, verbose_name='Price')
     old_price = models.DecimalField(max_digits=12, decimal_places=2, blank=True, null=True, verbose_name='Old Price')
-    availability = models.BooleanField(default=True)
     article = models.DecimalField(max_digits=10, decimal_places=0, blank=True, null=True, verbose_name='Product Article')
     description = models.TextField(blank=True, verbose_name='Description')
     categories = models.ManyToManyField('Category', related_name='products')
+    availability = models.BooleanField(default=True)
+
 
     class Meta:
         verbose_name = 'Product'
@@ -24,7 +25,6 @@ class Image(models.Model):
     product = models.ForeignKey('shop.Product', on_delete=models.CASCADE, related_name='images')
     url = models.URLField(max_length=512, verbose_name='Image URL')
     image = models.ImageField(upload_to='images/product', max_length=300)
-
 
 
 class Category(models.Model):

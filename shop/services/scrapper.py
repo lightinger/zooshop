@@ -11,7 +11,7 @@ from django.utils.text import slugify
 from shop.models import Product, Image, Category
 
 STATIC_URL = 'https://masterzoo.ua'
-base_url = "https://masterzoo.ua/ua/tualeti-ta-aksesuari-dlya-kotiv/"
+base_url = "https://masterzoo.ua/ua/nabori-dlya-kotiv/"
 output_lock = threading.Lock()
 page_number = 1
 
@@ -26,24 +26,6 @@ def get_product_links(page_url):
     else:
         print(f"Ошибка при запросе страницы. Код состояния: {response.status_code}")
         return []
-
-
-def upload_images(images: list[str], product: Product) -> None:
-    for i, image_url in enumerate(images, start=1):
-        with requests.Session() as session:
-            response = session.get(image_url)
-            assert response.status_code == HTTPStatus.OK, 'Wrong status code'
-
-        # Save the image to the Image model
-        image_instance = Image.objects.create(
-            product=product,
-            image=f'images/product/{product.slug}-{i}.jpg',  # Adjust the image path as needed
-            url=image_url,
-        )
-
-        # Save the image file
-        with open(f'static/{image_instance.image.name}', 'wb') as file:
-            file.write(response.content)
 
 
 def process_product_link(product_link):
@@ -96,6 +78,23 @@ def process_product_link(product_link):
     except Exception as error:
         print(f"Ошибка при запросе товара по ссылке {product_link}: {error}")
 
+
+def upload_images(images: list[str], product: Product) -> None:
+    for i, image in enumerate(images, start=1):
+        with requests.Session() as session:
+            response = session.get(image)
+            assert response.status_code == HTTPStatus.OK, 'Wrong status code'
+
+        with open(f'static/images/product/{product.slug}-{i}.jpg', 'wb') as file:
+            file.write(response.content)
+
+        Image.objects.create(
+            product=product,
+            image=f'images/product/{product.slug}-{i}.jpg',
+            url=image,
+        )
+
+
 @transaction.atomic
 def write_to_db(data: dict) -> None:
     product, _ = Product.objects.get_or_create(
@@ -118,6 +117,7 @@ def write_to_db(data: dict) -> None:
 
     if data['Image']:
         upload_images(data['Image'], product)
+
 
 def main():
     global page_number
