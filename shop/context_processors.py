@@ -4,7 +4,7 @@ from . models import Category
 
 
 def header_categories(request):
-    categories = Category.objects.all()[:10]
+    categories = Category.objects.annotate(products_count=Count('products')).order_by('-products_count')[:5]
     return {
         'categories': categories
     }

@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AddField(
-            model_name='product',
+            model_name='media',
             name='categories',
             field=models.ManyToManyField(related_name='products', to='shop.category'),
         ),

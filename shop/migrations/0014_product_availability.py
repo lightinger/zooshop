@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AddField(
-            model_name='product',
+            model_name='media',
             name='availability',
             field=models.BooleanField(default=True),
         ),

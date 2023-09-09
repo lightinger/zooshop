@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
-
 from . models import Category, Product
+
 
 def index(request):
     context = {}
@@ -8,9 +8,10 @@ def index(request):
 
 
 def catalog(request, **kwargs):
-    # category = get_object_or_404(Category, slug=kwargs.get('slug'))
-    # products = Product.objects.filter(categories=category)[:10]
+    category = get_object_or_404(Category, slug=kwargs.get('slug'))
+    products = Product.objects.filter(categories=category)[:12]
     context = {
+        'products': products
     }
     return render(request, 'shop-left-sidebar.html', context=context)
 
@@ -30,6 +31,9 @@ def faq(request):
     return render(request, 'faq.html', context=context)
 
 
-def product(request):
-    context = {}
+def product(request, **kwargs):
+    single_product = get_object_or_404(Product, slug=kwargs.get('slug'))
+    context = {
+        'product': single_product
+    }
     return render(request, 'product-details.html', context=context)

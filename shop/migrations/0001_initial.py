@@ -29,7 +29,7 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('url', models.URLField()),
                 ('image', models.ImageField(upload_to='images')),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='picture', to='shop.product')),
+                ('media', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='picture', to='shop.media')),
             ],
         ),
     ]

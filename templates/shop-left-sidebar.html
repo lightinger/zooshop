@@ -1,546 +1,661 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block main %}
-<section class="flat-title-page inner"><div class="overlay"></div>
-<div class="container">
-<div class="row">
-<div class="col-md-12">
-<div class="page-title-heading center">
-<h2 class="heading">Shop Left Sidebar</h2>
-<div class="title-inner link-style-3">
-<h5 class=""><a class="home fw-4" href="index.html">Home</a><span>Shop Left Sidebar</span></h5>
-</div>
-</div>
-</div>
-</div>
-</div>
+<section class="flat-title-page inner">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-title-heading center">
+                    <h2 class="heading">Shop Left Sidebar</h2>
+                    <div class="title-inner link-style-3">
+                        <h5 class=""><a class="home fw-4" href="index.html">Home</a><span>Shop Left Sidebar</span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 <section class="tf-section flat-shop-sidebar style-left">
-<div class="container">
-<div class="row">
-<div class="col-lg-3 col-md-12">
-<aside class="side-bar">
-<div class="inner-side-bar">
-<div class="widget search">
-<div class="search-flat">
-<form action="#" method="get" role="search" class="search-form">
-<input type="search" class="search-field" placeholder="Search keywords" value="" name="s" title="Search for" required="">
-<button class="search-icon search-submit" type="submit" title="Search"></button>
-</form>
-</div>
-</div>
-<div class="widget widget-categorie style">
-<h3 class="widget-title title-list"> Category </h3>
-<div class="progress">
-<div class="progress-bar"> </div>
-</div>
-<ul>
-<li class="active">
-<h5><a href="shop-grid.html">Beverages</a><span>(10)</span></h5>
-</li>
-<li>
-<h5><a href="shop-grid.html">Vegetabless</a><span>(60)</span></h5>
-</li>
-<li>
-<h5><a href="shop-grid.html">Fresh Fruits</a><span>(08)</span></h5>
-</li>
-<li>
-<h5><a href="shop-grid.html">Chiken Eggs</a><span>(08)</span></h5>
-</li>
-<li>
-<h5><a href="shop-grid.html">Milk & Meat</a><span>(08)</span></h5>
-</li>
-</ul>
-</div>
-<div class="widget widget-price ">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-12">
+                <aside class="side-bar">
+                    <div class="inner-side-bar">
+                        <div class="widget search">
+                            <div class="search-flat">
+                                <form action="#" method="get" role="search" class="search-form">
+                                    <input type="search" class="search-field" placeholder="Search keywords" value=""
+                                           name="s" title="Search for" required="">
+                                    <button class="search-icon search-submit" type="submit" title="Search"></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="widget widget-categorie style">
+                            <h3 class="widget-title title-list"> Category </h3>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                            <ul>
+                                <li class="active">
+                                    <h5><a href="shop-grid.html">Beverages</a><span>(10)</span></h5>
+                                </li>
+                                <li>
+                                    <h5><a href="shop-grid.html">Vegetabless</a><span>(60)</span></h5>
+                                </li>
+                                <li>
+                                    <h5><a href="shop-grid.html">Fresh Fruits</a><span>(08)</span></h5>
+                                </li>
+                                <li>
+                                    <h5><a href="shop-grid.html">Chiken Eggs</a><span>(08)</span></h5>
+                                </li>
+                                <li>
+                                    <h5><a href="shop-grid.html">Milk & Meat</a><span>(08)</span></h5>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="widget widget-price ">
 
-<h3 class="widget-title">Filter by price</h3>
-<div id="slider-range"></div>
-<div class=" slider-labels">
-<div class="caption flex-two">
-<div>
-<span>Price:</span>
-<span id="slider-range-value1"></span>
-<span id="slider-range-value2"></span>
-</div>
-<div class="buttons"><a href="#">Filter</a></div>
-</div>
-<div>
-<form>
-<input type="hidden" name="min-value" value="">
-<input type="hidden" name="max-value" value="">
-</form>
-</div>
-</div>
-</div>
-<div class="widget widget-product style">
-<h3 class="widget-title "> New Products </h3>
-<div class="progress">
-<div class="progress-bar"> </div>
-</div>
-<div class="flat-special ">
-<div class="box-special box-hv flex">
-<div class="images hover-style">
-<a href="product-details.html">
-<img class="img-default" src="{% static 'images/img-box/sidebar-shop-1.png' %}" alt="images">
-<img class="img-hover" src="{% static 'images/img-box/sidebar-shop-4.png' %}" alt="images">
-</a>
-</div>
-<div class="content">
-<div class="star">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg class="svg-style" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-</div>
-<h5 class="link-style-1 fw-6"><a href="product-details.html">Orange Juice</a> </h5>
-<div class="money">
-<span class="two">$10</span>
-</div>
-</div>
-</div>
-<div class="box-special box-hv flex">
-<div class="images hover-style">
-<a href="product-details.html">
-<img class="img-default" src="{% static 'images/img-box/sidebar-shop-2.png' %}" alt="images">
-<img class="img-hover" src="{% static 'images/img-box/sidebar-shop-3.png' %}" alt="images">
-</a>
-</div>
-<div class="content">
-<div class="star">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg class="svg-style" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-</div>
-<h5 class="link-style-1 fw-6"><a href="product-details.html">Orange Fruits</a> </h5>
-<div class="money">
-<span class="two">$10</span>
-</div>
-</div>
-</div>
-<div class="box-special box-hv flex">
-<div class="images hover-style">
-<a href="product-details.html">
-<img class="img-default" src="{% static 'images/img-box/sidebar-shop-3.png' %}" alt="images">
-<img class="img-hover" src="{% static 'images/img-box/sidebar-shop-2.png' %}" alt="images">
-</a>
-</div>
-<div class="content">
-<div class="star">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg class="svg-style" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-</div>
-<h5 class="link-style-1 fw-6"><a href="product-details.html">Fresh Carrots</a> </h5>
-<div class="money">
-<span class="two">$10</span>
-</div>
-</div>
-</div>
-<div class="box-special box-hv flex">
-<div class="images hover-style">
-<a href="product-details.html">
-<img class="img-default" src="{% static 'img-box/sidebar-shop-4.png' %}" alt="images">
-<img class="img-hover" src="{% static 'images/img-box/sidebar-shop-1.png' %}" alt="images">
-</a>
-</div>
-<div class="content">
-<div class="star">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg class="svg-style" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-</div>
-<h5 class="link-style-1 fw-6"><a href="product-details.html">Fresh Carrots</a> </h5>
-<div class="money">
-<span class="two">$10</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="widget widget-tags">
-<div class="box-style">
-<h3 class="widget-title title-tags"> Popular Tags </h3>
-<div class="progress">
-<div class="progress-bar"> </div>
-</div>
-</div>
-<div class="tags_cloud_inner">
-<a href="#" class="active">Farming</a>
-<a href="#">Organic</a>
-<a href="#">Vegetables</a>
-<a href="#">Fruits</a>
-<a href="#">Fresh Food</a>
-</div>
-</div>
-<div class="widget widget-save">
-<h3 class="widget-title title-save text-color-1"> Organic </h3>
-<div class="title title-30 text-color-1 fw-6">Save 17% On
-Oganic Juice</div>
-</div>
-</div>
-</aside>
-</div>
-<div class="col-lg-9 col-md-12 col-sm-12">
-<div class="post">
-<div class="category-filter flex-two">
-<div class="box-1">
-<h5>Showing 1–12 of 26 results</h5>
-</div>
-<div class="box-2 flex">
-<div id="item_category2" class="dropdown titles-dropdown ">
-<a href="#" class="btn-selector nolink "> Sort by latest</a>
-<ul>
-<li><span>Juice</span></li>
-<li><span>Vegetables</span></li>
-<li><span>Beverages</span></li>
-</ul>
-</div>
-<a href="#" class="btn-view grid active"><i class="fas fa-th"></i></a>
-<a href="#" class="btn-view list"><i class="fas fa-list-ul"></i></a>
-</div>
-</div>
-<div class="flat-vegetables">
-<div class="wrap-vegetables flex">
-<div class="box box-hv">
-<div class="images hover-style">
-<a href="product-details.html"><img src="{% static 'images/img-box/food-2.png' %}" alt="images"></a>
-<div class="icon-list flex">
-<a class="icon-1" href="#"><i class="far fa-search"></i></a>
-<a class="icon-2" href="#"><i class="fas fa-shopping-basket"></i></a>
-<a class="icon-3" href="#"><i class="far fa-heart"></i></a>
-</div>
-<div class="tag-text style style2"> Sale </div>
-</div>
-<div class="content">
-<div class="star">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-</div>
-<h3 class="link-style-6"><a href="product-details.html">Fresh Carrots</a> </h3>
-<div class="money">
-<span class="two">$10</span>
-</div>
-</div>
-</div>
-<div class="box box-hv">
-<div class="images hover-style">
-<a href="product-details.html"><img src="{% static 'images/img-box/food-3.png' %}" alt="images"></a>
-<div class="icon-list flex">
-<a class="icon-1" href="#"><i class="far fa-search"></i></a>
-<a class="icon-2" href="#"><i class="fas fa-shopping-basket"></i></a>
-<a class="icon-3" href="#"><i class="far fa-heart"></i></a>
-</div>
-<div class="tag-text"> -30% </div>
-</div>
-<div class="content">
-<div class="star">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-</div>
-<h3 class="link-style-6"><a href="product-details.html">Organic Brocolli</a> </h3>
-<div class="money">
-<span class="one">$15</span> <span class="two">$10</span>
-</div>
-</div>
-</div>
-<div class="box box-hv">
-<div class="images hover-style">
-<a href="product-details.html"><img src="{% static 'images/img-box/food-4.png' %}" alt="images"></a>
-<div class="icon-list flex">
-<a class="icon-1" href="#"><i class="far fa-search"></i></a>
-<a class="icon-2" href="#"><i class="fas fa-shopping-basket"></i></a>
-<a class="icon-3" href="#"><i class="far fa-heart"></i></a>
-</div>
-<div class="tag-text style"> Fress</div>
-</div>
-<div class="content">
- <div class="star">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-</div>
-<h3 class="link-style-6"><a href="product-details.html">Fresh Gooseberry</a> </h3>
-<div class="money">
-<span class="one">$15</span> <span class="two">$10</span>
-</div>
-</div>
-</div>
-<div class="box box-hv">
-<div class="images hover-style">
-<a href="product-details.html"><img src="{% static 'images/img-box/food-5.png' %}" alt="images"></a>
-<div class="icon-list flex">
-<a class="icon-1" href="#"><i class="far fa-search"></i></a>
-<a class="icon-2" href="#"><i class="fas fa-shopping-basket"></i></a>
-<a class="icon-3" href="#"><i class="far fa-heart"></i></a>
-</div>
-<div class="tag-text style"> Fress</div>
-</div>
-<div class="content">
-<div class="star">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-</div>
-<h3 class="link-style-6"><a href="product-details.html">Brown Onions</a> </h3>
-<div class="money">
-<span class="two">$90</span>
-</div>
-</div>
-</div>
-<div class="box box-hv">
-<div class="images hover-style">
-<a href="product-details.html"><img src="{% static 'images/img-box/food-6.png' %}" alt="images"></a>
-<div class="icon-list flex">
-<a class="icon-1" href="#"><i class="far fa-search"></i></a>
-<a class="icon-2" href="#"><i class="fas fa-shopping-basket"></i></a>
-<a class="icon-3" href="#"><i class="far fa-heart"></i></a>
-</div>
-<div class="tag-text style style2"> Sale </div>
-</div>
-<div class="content">
-<div class="star">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-</div>
-<h3 class="link-style-6"><a href="product-details.html">Organic Brocolli</a> </h3>
-<div class="money">
-<span class="one">$15</span> <span class="two">$10</span>
-</div>
-</div>
- </div>
-<div class="box box-hv">
-<div class="images hover-style">
-<a href="product-details.html"><img src="{% static 'images/img-box/food-7.png' %}" alt="images"></a>
-<div class="icon-list flex">
-<a class="icon-1" href="#"><i class="far fa-search"></i></a>
-<a class="icon-2" href="#"><i class="fas fa-shopping-basket"></i></a>
-<a class="icon-3" href="#"><i class="far fa-heart"></i></a>
-</div>
-<div class="tag-text"> -30% </div>
-</div>
-<div class="content">
-<div class="star">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-</div>
-<h3 class="link-style-6"><a href="product-details.html">Fresh Meal Kit</a> </h3>
-<div class="money">
-<span class="one">$15</span> <span class="two">$10</span>
-</div>
-</div>
-</div>
-<div class="box box-hv">
-<div class="images hover-style">
-<a href="product-details.html"><img src="{% static 'images/img-box/food-2.png' %}" alt="images"></a>
-<div class="icon-list flex">
-<a class="icon-1" href="#"><i class="far fa-search"></i></a>
-<a class="icon-2" href="#"><i class="fas fa-shopping-basket"></i></a>
-<a class="icon-3" href="#"><i class="far fa-heart"></i></a>
-</div>
-<div class="tag-text style style2"> Sale </div>
-</div>
-<div class="content">
-<div class="star">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-</div>
-<h3 class="link-style-6"><a href="product-details.html">Fresh Carrots</a> </h3>
-<div class="money">
-<span class="two">$10</span>
-</div>
-</div>
-</div>
-<div class="box box-hv">
-<div class="images hover-style">
-<a href="product-details.html"><img src="{% static 'images/img-box/food-3.png' %}" alt="images"></a>
-<div class="icon-list flex">
-<a class="icon-1" href="#"><i class="far fa-search"></i></a>
-<a class="icon-2" href="#"><i class="fas fa-shopping-basket"></i></a>
-<a class="icon-3" href="#"><i class="far fa-heart"></i></a>
-</div>
-<div class="tag-text"> -30% </div>
-</div>
-<div class="content">
-<div class="star">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-</div>
-<h3 class="link-style-6"><a href="product-details.html">Organic Brocolli</a> </h3>
-<div class="money">
-<span class="one">$15</span> <span class="two">$10</span>
-</div>
-</div>
-</div>
-<div class="box box-hv">
-<div class="images hover-style">
-<a href="product-details.html"><img src="{% static 'images/img-box/food-4.png' %}" alt="images"></a>
-<div class="icon-list flex">
-<a class="icon-1" href="#"><i class="far fa-search"></i></a>
-<a class="icon-2" href="#"><i class="fas fa-shopping-basket"></i></a>
-<a class="icon-3" href="#"><i class="far fa-heart"></i></a>
-</div>
-<div class="tag-text style"> Fress</div>
-</div>
-<div class="content">
-<div class="star">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-</div>
-<h3 class="link-style-6"><a href="product-details.html">Fresh Gooseberry</a> </h3>
-<div class="money">
-<span class="one">$15</span> <span class="two">$10</span>
-</div>
-</div>
-</div>
-<div class="box box-hv">
-<div class="images hover-style">
-<a href="product-details.html"><img src="{% static 'images/img-box/food-8.png' %}" alt="images"></a>
-<div class="icon-list flex">
-<a class="icon-1" href="#"><i class="far fa-search"></i></a>
-<a class="icon-2" href="#"><i class="fas fa-shopping-basket"></i></a>
-<a class="icon-3" href="#"><i class="far fa-heart"></i></a>
-</div>
-<div class="tag-text style"> Fress</div>
-</div>
-<div class="content">
-<div class="star">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-</div>
-<h3 class="link-style-6"><a href="product-details.html">Brown Onions</a> </h3>
-<div class="money">
-<span class="two">$10</span>
-</div>
-</div>
-</div>
-<div class="box box-hv">
-<div class="images hover-style">
-<a href="product-details.html"><img src="{% static 'images/img-box/food-9.png' %}" alt="images"></a>
-<div class="icon-list flex">
-<a class="icon-1" href="#"><i class="far fa-search"></i></a>
-<a class="icon-2" href="#"><i class="fas fa-shopping-basket"></i></a>
-<a class="icon-3" href="#"><i class="far fa-heart"></i></a>
-</div>
-<div class="tag-text style style2"> Sale </div>
-</div>
-<div class="content">
-<div class="star">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-</div>
-<h3 class="link-style-6"><a href="product-details.html">Organic Brocolli</a> </h3>
-<div class="money">
-<span class="one">$15</span> <span class="two">$10</span>
-</div>
-</div>
-</div>
-<div class="box box-hv">
-<div class="images hover-style">
-<a href="product-details.html"><img src="{% static 'images/img-box/food-10.png' %}" alt="images"></a>
-<div class="icon-list flex">
-<a class="icon-1" href="#"><i class="far fa-search"></i></a>
-<a class="icon-2" href="#"><i class="fas fa-shopping-basket"></i></a>
-<a class="icon-3" href="#"><i class="far fa-heart"></i></a>
-</div>
-<div class="tag-text"> -30% </div>
-</div>
-<div class="content">
-<div class="star">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" /> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-</div>
-<h3 class="link-style-6"><a href="product-details.html">Fresh Meal Kit</a> </h3>
-<div class="money">
-<span class="one">$15</span> <span class="two">$10</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-12">
-<div class="themesflat-pagination clearfix center">
-<ul>
-<li><a href="#" class="page-numbers style"><i class="far fa-angle-left"></i></a></li>
-<li><a href="#" class="page-numbers">1</a></li>
-<li><a href="#" class="page-numbers current">2</a></li>
-<li><a href="#" class="page-numbers">3</a></li>
-<li><a href="#" class="page-numbers">4</a></li>
-<li><a href="#" class="page-numbers">5</a></li>
-<li><a href="#" class="page-numbers style"><i class="far fa-angle-right"></i></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
+                            <h3 class="widget-title">Filter by price</h3>
+                            <div id="slider-range"></div>
+                            <div class=" slider-labels">
+                                <div class="caption flex-two">
+                                    <div>
+                                        <span>Price:</span>
+                                        <span id="slider-range-value1"></span>
+                                        <span id="slider-range-value2"></span>
+                                    </div>
+                                    <div class="buttons"><a href="#">Filter</a></div>
+                                </div>
+                                <div>
+                                    <form>
+                                        <input type="hidden" name="min-value" value="">
+                                        <input type="hidden" name="max-value" value="">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget widget-product style">
+                            <h3 class="widget-title "> New Products </h3>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                            <div class="flat-special ">
+                                <div class="box-special box-hv flex">
+                                    <div class="images hover-style">
+                                        <a href="product-details.html">
+                                            <img class="img-default"
+                                                 src="{% static 'images/img-box/sidebar-shop-1.png' %}" alt="images">
+                                            <img class="img-hover"
+                                                 src="{% static 'images/img-box/sidebar-shop-4.png' %}" alt="images">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <div class="star">
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                 xml:space="preserve"><g> <g> <polygon
+                                                    points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		"/> </g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g></svg>
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                 xml:space="preserve"><g> <g> <polygon
+                                                    points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		"/> </g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g></svg>
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                 xml:space="preserve"><g> <g> <polygon
+                                                    points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		"/> </g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g></svg>
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                 xml:space="preserve"><g> <g> <polygon
+                                                    points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		"/> </g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g></svg>
+                                            <svg class="svg-style" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                 xml:space="preserve"><g> <g> <polygon
+                                                    points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		"/> </g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g></svg>
+                                        </div>
+                                        <h5 class="link-style-1 fw-6"><a href="product-details.html">Orange Juice</a>
+                                        </h5>
+                                        <div class="money">
+                                            <span class="two">$10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-special box-hv flex">
+                                    <div class="images hover-style">
+                                        <a href="product-details.html">
+                                            <img class="img-default"
+                                                 src="{% static 'images/img-box/sidebar-shop-2.png' %}" alt="images">
+                                            <img class="img-hover"
+                                                 src="{% static 'images/img-box/sidebar-shop-3.png' %}" alt="images">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <div class="star">
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                 xml:space="preserve"><g> <g> <polygon
+                                                    points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		"/> </g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g></svg>
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                 xml:space="preserve"><g> <g> <polygon
+                                                    points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		"/> </g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g></svg>
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                 xml:space="preserve"><g> <g> <polygon
+                                                    points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		"/> </g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g></svg>
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                 xml:space="preserve"><g> <g> <polygon
+                                                    points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		"/> </g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g></svg>
+                                            <svg class="svg-style" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                 xml:space="preserve"><g> <g> <polygon
+                                                    points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		"/> </g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g></svg>
+                                        </div>
+                                        <h5 class="link-style-1 fw-6"><a href="product-details.html">Orange Fruits</a>
+                                        </h5>
+                                        <div class="money">
+                                            <span class="two">$10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-special box-hv flex">
+                                    <div class="images hover-style">
+                                        <a href="product-details.html">
+                                            <img class="img-default"
+                                                 src="{% static 'images/img-box/sidebar-shop-3.png' %}" alt="images">
+                                            <img class="img-hover"
+                                                 src="{% static 'images/img-box/sidebar-shop-2.png' %}" alt="images">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <div class="star">
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                 xml:space="preserve"><g> <g> <polygon
+                                                    points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		"/> </g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g></svg>
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                 xml:space="preserve"><g> <g> <polygon
+                                                    points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		"/> </g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g></svg>
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                 xml:space="preserve"><g> <g> <polygon
+                                                    points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		"/> </g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g></svg>
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                 xml:space="preserve"><g> <g> <polygon
+                                                    points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		"/> </g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g></svg>
+                                            <svg class="svg-style" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                 xml:space="preserve"><g> <g> <polygon
+                                                    points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		"/> </g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g></svg>
+                                        </div>
+                                        <h5 class="link-style-1 fw-6"><a href="product-details.html">Fresh Carrots</a>
+                                        </h5>
+                                        <div class="money">
+                                            <span class="two">$10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-special box-hv flex">
+                                    <div class="images hover-style">
+                                        <a href="product-details.html">
+                                            <img class="img-default" src="{% static 'img-box/sidebar-shop-4.png' %}"
+                                                 alt="images">
+                                            <img class="img-hover"
+                                                 src="{% static 'images/img-box/sidebar-shop-1.png' %}" alt="images">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <div class="star">
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                 xml:space="preserve"><g> <g> <polygon
+                                                    points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		"/> </g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g></svg>
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                 xml:space="preserve"><g> <g> <polygon
+                                                    points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		"/> </g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g></svg>
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                 xml:space="preserve"><g> <g> <polygon
+                                                    points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		"/> </g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g></svg>
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                 xml:space="preserve"><g> <g> <polygon
+                                                    points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		"/> </g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g></svg>
+                                            <svg class="svg-style" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                 xml:space="preserve"><g> <g> <polygon
+                                                    points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		"/> </g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g></svg>
+                                        </div>
+                                        <h5 class="link-style-1 fw-6"><a href="product-details.html">Fresh Carrots</a>
+                                        </h5>
+                                        <div class="money">
+                                            <span class="two">$10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget widget-tags">
+                            <div class="box-style">
+                                <h3 class="widget-title title-tags"> Popular Tags </h3>
+                                <div class="progress">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                            <div class="tags_cloud_inner">
+                                <a href="#" class="active">Farming</a>
+                                <a href="#">Organic</a>
+                                <a href="#">Vegetables</a>
+                                <a href="#">Fruits</a>
+                                <a href="#">Fresh Food</a>
+                            </div>
+                        </div>
+                        <div class="widget widget-save">
+                            <h3 class="widget-title title-save text-color-1"> Organic </h3>
+                            <div class="title title-30 text-color-1 fw-6">Save 17% On
+                                Oganic Juice
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <div class="col-lg-9 col-md-12 col-sm-12">
+                <div class="post">
+                    <div class="category-filter flex-two">
+                        <div class="box-1">
+                            <h5>Showing 1–12 of 26 results</h5>
+                        </div>
+                        <div class="box-2 flex">
+                            <div id="item_category2" class="dropdown titles-dropdown ">
+                                <a href="#" class="btn-selector nolink "> Sort by latest</a>
+                                <ul>
+                                    <li><span>Juice</span></li>
+                                    <li><span>Vegetables</span></li>
+                                    <li><span>Beverages</span></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn-view grid active"><i class="fas fa-th"></i></a>
+                            <a href="#" class="btn-view list"><i class="fas fa-list-ul"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="flat-vegetables">
+                        <div class="wrap-vegetables flex">
+                            {% for product in products %}
+                            {% include 'listing-product.html' %}
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="themesflat-pagination clearfix center">
+                    <ul>
+                        <li><a href="#" class="page-numbers style"><i class="far fa-angle-left"></i></a></li>
+                        <li><a href="#" class="page-numbers">1</a></li>
+                        <li><a href="#" class="page-numbers current">2</a></li>
+                        <li><a href="#" class="page-numbers">3</a></li>
+                        <li><a href="#" class="page-numbers">4</a></li>
+                        <li><a href="#" class="page-numbers">5</a></li>
+                        <li><a href="#" class="page-numbers style"><i class="far fa-angle-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="flat-subscribe">
-<div class="container">
-<div class="row">
-<div class="col-lg-6 col-md-12">
-<div class="heading-section">
-<h5 class="text-color-1">Subsrribe Here</h5>
-<h2 class="text-color-1">Subscribe To Newsletter</h2>
-<h4 class="fw-4 text-color-1">Duis aute irure dolor in reprehenderit in voluptate velit dolore eu fugiat nulla pariatur.</h4>
-</div> 
-</div>
-<div class="col-lg-6 col-md-12">
-<div class="widget-subcribe">
-<div class="form-subcribe">
-<form id="subscribe-form" action="#" method="GET" accept-charset="utf-8" class="form-submit flex">
-<input name="email" value="" class="email" type="email" placeholder="Email Address" required>
-<button id="submit" name="submit" type="submit">
-<span>Subsrcribe Now</span>
-</button>
-</form>
-</div>
-</div>
-</div>
-</div>
-</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="heading-section">
+                    <h5 class="text-color-1">Subsrribe Here</h5>
+                    <h2 class="text-color-1">Subscribe To Newsletter</h2>
+                    <h4 class="fw-4 text-color-1">Duis aute irure dolor in reprehenderit in voluptate velit dolore eu
+                        fugiat nulla pariatur.</h4>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="widget-subcribe">
+                    <div class="form-subcribe">
+                        <form id="subscribe-form" action="#" method="GET" accept-charset="utf-8"
+                              class="form-submit flex">
+                            <input name="email" value="" class="email" type="email" placeholder="Email Address"
+                                   required>
+                            <button id="submit" name="submit" type="submit">
+                                <span>Subsrcribe Now</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 {% endblock main %}

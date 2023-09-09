@@ -11,7 +11,7 @@ from django.utils.text import slugify
 from shop.models import Product, Image, Category
 
 STATIC_URL = 'https://masterzoo.ua'
-base_url = "https://masterzoo.ua/ua/nabori-dlya-kotiv/"
+base_url = "https://masterzoo.ua/ua/catalog/koti/posud-dlya-kotiv/"
 output_lock = threading.Lock()
 page_number = 1
 
@@ -34,7 +34,7 @@ def process_product_link(product_link):
         product_html = product_response.text
         product_parser = HTMLParser(product_html)
 
-        product_title = product_parser.css_first('h1.product-title[itemprop="name"]')
+        product_title = product_parser.css_first('.product-title')
         title = product_title.text()
         price = product_parser.css_first(".product-price__item").text(strip=True).replace("грн", "").strip().replace(" ", "")
         old_price_element = product_parser.css_first(".product-price__old-price")
@@ -85,7 +85,7 @@ def upload_images(images: list[str], product: Product) -> None:
             response = session.get(image)
             assert response.status_code == HTTPStatus.OK, 'Wrong status code'
 
-        with open(f'static/images/product/{product.slug}-{i}.jpg', 'wb') as file:
+        with open(f'media/images/product/{product.slug}-{i}.jpg', 'wb') as file:
             file.write(response.content)
 
         Image.objects.create(

@@ -14,12 +14,12 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='image',
             name='image',
-            field=models.ImageField(max_length=300, upload_to='images/product'),
+            field=models.ImageField(max_length=300, upload_to='images/media'),
         ),
         migrations.AlterField(
             model_name='image',
-            name='product',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='images', to='shop.product'),
+            name='media',
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='images', to='shop.media'),
         ),
         migrations.AlterField(
             model_name='image',

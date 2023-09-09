@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AlterModelOptions(
-            name='product',
+            name='media',
             options={'ordering': ['title'], 'verbose_name': 'Product', 'verbose_name_plural': 'Products'},
         ),
         migrations.RemoveField(

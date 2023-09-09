@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AlterField(
-            model_name='product',
+            model_name='media',
             name='article',
             field=models.DecimalField(blank=True, decimal_places=0, max_digits=10, null=True, verbose_name='Product Article'),
         ),

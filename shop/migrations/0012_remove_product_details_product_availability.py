@@ -11,11 +11,11 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.RemoveField(
-            model_name='product',
+            model_name='media',
             name='details',
         ),
         migrations.AddField(
-            model_name='product',
+            model_name='media',
             name='availability',
             field=models.BooleanField(default=True),
         ),
