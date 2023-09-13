@@ -8,9 +8,9 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="page-title-heading center">
-                    <h2 class="heading ">About Us</h2>
+                    <h2 class="heading ">Про нас</h2>
                     <div class="title-inner link-style-3">
-                        <h5 class=""><a class="home fw-4" href="index.html">Home</a><span>About Us</span></h5>
+                        <h5 class=""><a class="home fw-4" href="{% url 'index' %}">Главная</a><span>Про нас</span></h5>
                     </div>
                 </div>
             </div>
@@ -22,26 +22,20 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 ">
                 <div class="box">
-                    <div class="title title-36 fw-7 text-color-6"> Our Mission</div>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alteration in some form, by injected humour,
-                        or randomised words which don't look even believable. If you are going to use a passage of Lorem
-                        Ipsum,</p>
-                    <h4 class="fw-6">There are many variations of passages of Lorem Ipsum available, but the majority
-                        have suffered some form, by injected humour,
-                        or randomised words which don't look even believable.</h4>
+                    <div class="title title-36 fw-7 text-color-6">Почему мы</div>
+                    <p>"Зоомагазин "Наші Друзі" - це ваш надійний помічник у догляді за улюбленцями.
+                        Ми пропонуємо якісні товари для всіх видів тварин, гарантуємо безпеку та комфорт.
+                        Швидке та зручне замовлення разом із нами - це простий спосіб піклуватися про вашого улюбленця.
+                        Довіряйте "Наші Друзі" - ми покладаємо добробут та щастя тварин на перше місце."</p>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6">
-                <div class="box box-2">
-                    <div class="title title-36 fw-7 text-color-6"> Our Vission</div>
-                    <h4 class="fw-6">There are many variations of passages of Lorem Ipsum available, but the majority
-                        have suffered some form, by injected humour, or randomised words which don't look even
-                        believable.</h4>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alteration in some form, by injected humour,
-                        or randomised words which don't look even believable. If you are going to use a passage of Lorem
-                        Ipsum,</p>
+                <div class="box box-3">
+                    <div class="title title-36 fw-7 text-color-6">Наше виденье</div>
+                    <p>Ми заснували наш зоомагазин з однією метою - зробити життя домашніх улюбленців щасливішим і
+                        господарів зручнішим. Наше видіння - це добробут тварин, який досягається завдяки якісним
+                        товарам та сервісу. Ми прагнемо створити спільноту, яка підтримує вас у догляді за вашими
+                        улюбленцями та сприяє захисту прав тварин.</p>
                 </div>
             </div>
         </div>
@@ -55,11 +49,10 @@
                 <div class="themes-count tf-counter flex-one">
                     <div class="counter-box">
                         <div class="content wow fadeInUp" data-wow-delay="0ms" data-wow-duration="2000ms">
-                            <div class="count-number">
-                                <div class="number number-style number-one" data-speed="2000" data-to="1"
-                                     data-inviewport="yes"></div>
+                            <div class="count-number ">
+                                <div class="number" data-speed="2000" data-to="1125" data-inviewport="yes">1125</div>
                             </div>
-                            <h3 class="title-count fw-5">Satisfied Clients</h3>
+                            <h3 class="title-count fw-5">Довольные клиенты</h3>
                         </div>
                     </div>
                     <div class="counter-box">
@@ -67,7 +60,7 @@
                             <div class="count-number ">
                                 <div class="number" data-speed="2000" data-to="678" data-inviewport="yes">678</div>
                             </div>
-                            <h3 class="title-count fw-5">Expert Team</h3>
+                            <h3 class="title-count fw-5">Оценки экспертов</h3>
                         </div>
                     </div>
                     <div class="counter-box">
@@ -75,7 +68,7 @@
                             <div class="count-number ">
                                 <div class="number" data-speed="2000" data-to="285" data-inviewport="yes">285</div>
                             </div>
-                            <h3 class="title-count fw-5">Activate Products</h3>
+                            <h3 class="title-count fw-5">Одобренные продукты</h3>
                         </div>
                     </div>
                     <div class="counter-box">
@@ -83,7 +76,7 @@
                             <div class="count-number">
                                 <div class="number" data-speed="2000" data-to="15" data-inviewport="yes">15</div>
                             </div>
-                            <h3 class="title-count fw-5">Awards Winning</h3>
+                            <h3 class="title-count fw-5">Победы в номинациях</h3>
                         </div>
                     </div>
                 </div>
@@ -97,11 +90,11 @@
             <div class="col-lg-6 col-md-7">
                 <div class="wrap-about">
                     <div class="heading-section">
-                        <h5>Why Choose Us</h5>
-                        <h2>Organic & Helathy Foods
-                            Provider Farming</h2>
-                        <p>There are many variations of passages of Lorem Ipsum available, majority have suffered
-                            alteration in some form, by injected randomised words which don't look even believable. </p>
+                        <h2>Відмінні товари</h2>
+                        <p>У нашому асортименті ви знайдете найцікавіші та найнеочікуваніші товари. Ми постійно
+                            оновлюємо наш вибір, щоб забезпечити вас унікальними та нестандартними знахідками, які
+                            зроблять ваше життя більш цікавим та незабутнім. Вишукані аксесуари, стильні рішення та
+                            найнеабичайніші вироби - все це на вас чекає в нашому магазині</p>
                     </div>
                     <div class="box-icon flex">
                         <div class="icon">
@@ -113,8 +106,9 @@
                             </svg>
                         </div>
                         <div class="content">
-                            <h3 class="link-style-1"><a href="#">Agriculture & Foods</a></h3>
-                            <p>Nemo enim ipsam voluptatem quia voluptas sit fugit, sed quia consequuntur</p>
+                            <h3 class="link-style-1"><a href="#">Качественные товары</a></h3>
+                            <p>Наші товари - це гарантія якості. Ми забезпечуємо надійність, безпеку та комфорт.
+                                Обираючи нас, ви обираєте догляд за вашим пушистим другом.</p>
                         </div>
                     </div>
                     <div class="box-icon flex">
@@ -136,8 +130,9 @@
                             </svg>
                         </div>
                         <div class="content">
-                            <h3 class="link-style-1"><a href="#">Vegetables & Fruits</a></h3>
-                            <p>Nemo enim ipsam voluptatem quia voluptas sit fugit, sed quia consequuntur</p>
+                            <h3 class="link-style-1"><a href="#">Подход к каждому клиенту</a></h3>
+                            <p>Кожен клієнт - особливий. Ми прагнемо задовольнити ваші потреби та надати персональний
+                                сервіс, щоб ви були повністю задоволені нашими послугами.</p>
                         </div>
                     </div>
                 </div>
@@ -145,10 +140,10 @@
             <div class="col-lg-6 col-md-5">
                 <div class="wrap-img relative center">
                     <div class="images image-1">
-                        <img src="{% static 'images/img-box/about-5.jpg' %}" alt="images">
+                        <img src="{% static 'images/img-box/about-image-2.jpg' %}" alt="images">
                     </div>
                     <div class="images image-2">
-                        <img src="{% static 'images/img-box/about-6.jpg' %}" alt="images">
+                        <img src="{% static 'images/img-box/about-image-3.jpg' %}" alt="images">
                     </div>
                     <div class="mark-image">
                         <img src="{% static 'images/mark/mark-about.png' %}" alt="images">
@@ -167,9 +162,9 @@
                         <img class="img" src="{% static 'images/icon/icon-5.png' %}" alt="images">
                     </div>
                     <div class="content">
-                        <h3 class="link-style-6"><a href="#">Creative Design</a></h3>
-                        <p> Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua.ipsum suspendisse
-                            ultrices gravida.</p>
+                        <h3 class="link-style-6"><a href="#">Креативный дизайн</a></h3>
+                        <p>На нашому сайті ви знайдете креативний дизайн, який додасть унікальності та естетики вашим
+                            проєктам і ідеям</p>
                     </div>
                 </div>
             </div>
@@ -179,9 +174,9 @@
                         <img class="img" src="{% static 'images/icon/icon-6.png' %}" alt="images">
                     </div>
                     <div class="content">
-                        <h3 class="link-style-1"><a href="#">100% Money Back Guarantee</a></h3>
-                        <p> Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua.ipsum suspendisse
-                            ultrices gravida.</p>
+                        <h3 class="link-style-1"><a href="#">100% Возврат денег</a></h3>
+                        <p>На нашому сайті діє політика повернення коштів за товар. Ми прагнемо зробити вашу покупку
+                            надійною та безпечною.</p>
                     </div>
                 </div>
             </div>
@@ -191,138 +186,9 @@
                         <img class="img" src="{% static 'images/icon/icon-7.png' %}" alt="images">
                     </div>
                     <div class="content">
-                        <h3 class="link-style-6"><a href="#">Online Support 24/7</a></h3>
-                        <p> Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua.ipsum suspendisse
-                            ultrices gravida.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="tf-section flat-video-page">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="flat-video page">
-                    <div class="overlay"></div>
-                    <div class="video-box center relative">
-                        <div class="heading-section style">
-                            <h5>How Can We Help</h5>
-                            <h2 class="text-color-1">Awesome Solutions 100% Success</h2>
-                        </div>
-                        <div class="post-video flex-five">
-                            <a href="https://youtu.be/MLpWrANjFbI" class="lightbox-image">
-                                <i class="fas fa-play"></i>
-                                <i class="ripple"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="flat-team center">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12">
-                <div class="heading-section">
-                    <h5>Meet Our Team</h5>
-                    <h2>We Have Skilled People</h2>
-                </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="wrap-team">
-                    <div class="swiper-container carousel-team">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="box-team box-hv">
-                                    <div class="images hover-style hv-2">
-                                        <img src="{% static 'images/img-box/team-1.jpg' %}" alt="">
-                                        <div class="content">
-                                            <h5 class="fw-6">Admin</h5>
-                                            <h3 class="link-style-3"><a href="team.html">Richard L. McDonald</a></h3>
-                                            <div class="icon-social link-style-6">
-                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                                <a href="#"> <i class="fab fa-linkedin-in"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="box-team box-hv ">
-                                    <div class="images hover-style hv-2">
-                                        <img src="{% static 'images/img-box/team-2.jpg' %}" alt="">
-                                        <div class="content">
-                                            <h5 class="fw-6">Admin</h5>
-                                            <h3 class="link-style-3"><a href="team.html">Richard L. McDonald</a></h3>
-                                            <div class="icon-social link-style-6">
-                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="box-team box-hv">
-                                    <div class="images hover-style hv-2">
-                                        <img src="{% static 'images/img-box/team-3.jpg' %}" alt="">
-                                        <div class="content">
-                                            <h5 class="fw-6">Admin</h5>
-                                            <h3 class="link-style-3"><a href="team.html">Richard L. McDonald</a></h3>
-                                            <div class="icon-social link-style-6">
-                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="box-team box-hv ">
-                                    <div class="images hover-style hv-2">
-                                        <img src="{% static 'images/img-box/team-1.jpg' %}" alt="">
-                                        <div class="content">
-                                            <h5 class="fw-6">Admin</h5>
-                                            <h3 class="link-style-3"><a href="team.html">Richard L. McDonald</a></h3>
-                                            <div class="icon-social link-style-6">
-                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                                <a href="#"> <i class="fab fa-linkedin-in"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="box-team box-hv ">
-                                    <div class="images hover-style hv-2">
-                                        <img src="{% static 'images/img-box/team-2.jpg' %}" alt="">
-                                        <div class="content">
-                                            <h5 class="fw-6">Admin</h5>
-                                            <h3 class="link-style-3"><a href="team.html">Richard L. McDonald</a></h3>
-                                            <div class="icon-social link-style-6">
-                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
+                        <h3 class="link-style-6"><a href="#">Мы на связи 24/7</a></h3>
+                        <p>"Наша команда завжди на зв'язку для вас, готова відповісти на всі ваші запитання та
+                            допомогти в будь-який час"</p>
                     </div>
                 </div>
             </div>
@@ -335,64 +201,70 @@
         <div class="row">
             <div class="col-lg-12 col-md-12">
                 <div class="heading-section">
-                    <h5 class="">Customer Reviews</h5>
-                    <h2 class="text-color-1">What People Say</h2>
+                    <h2 class="text-color-1">Отзывы наших клиентов</h2>
                 </div>
                 <div class="swiper-container carousel-2" data-aos="fade-up" data-aos-duration="2000">
                     <div class="swiper-wrapper slider-style">
                         <div class="swiper-slide">
                             <div class="box-testi">
                                 <img class="img-testi" src="{% static 'images/icon/icon-testi.png' %}" alt="images">
-                                <h5 class="text-color-4">Nemo enim ipsam voluptatem quia voluptas sit aspernatur odit
-                                    aut fugit, sed quia consequuntur magni voluptatem of sequi nesciunt. Neque porro
-                                    quisquam est,</h5>
+                                <h5 class="text-color-4">Моя оцінка доставці - "відмінно"! Як чоловік, ціную швидкість
+                                    та надійність. Замовив товари у вашому магазині та був приємно вражений.
+                                    Замовлення було оформлено швидко, і товари прибули швидко. Кур'єр був ввічливим
+                                    та професійним.
+                                    Служба підтримки була дуже корисною та відповіла на всі мої запитання.
+                                    Дякую за відмінну доставку, я рекомендую ваш магазин!</h5>
                                 <div class="author">
                                     <div class="images-author">
                                         <img src="{% static 'images/img-box/testi-1.jpg' %}" alt="images">
                                     </div>
-                                    <h4 class="text-color-1 fw-6">Nicolas Markus</h4>
+                                    <h4 class="text-color-1 fw-6">Валентин Полиш</h4>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="box-testi">
                                 <img class="img-testi" src="{% static 'images/icon/icon-testi.png' %}" alt="images">
-                                <h5 class="text-color-4">Nemo enim ipsam voluptatem quia voluptas sit aspernatur odit
-                                    aut fugit, sed quia consequuntur magni voluptatem of sequi nesciunt. Neque porro
-                                    quisquam est,</h5>
+                                <h5 class="text-color-4">Хочу поділитися враженнями від наших останніх покупок товарів.
+                                    Замовила справжні красивощі та все прибуло швидше, ніж я встигла подумати.
+                                    Кур'єр був чемний та дуже ввічливий.
+                                    Ці покупки залишили в мене відчуття задоволення та надійності. Всі товари були в
+                                    цілковитому порядку, без найменших пошкоджень.
+                                    Приємно було взаємодіяти із службою підтримки. Вони були відкриті для запитань та
+                                    завжди надавали чітку інформацію.
+                                    Велике спасибі за ваш відмінний сервіс. Ваші товари точно виправдали мої очікування
+                                    та підтвердили вищий стандарт обслуговування!</h5>
                                 <div class="author">
                                     <div class="images-author">
                                         <img src="{% static 'images/img-box/testi-2.jpg' %}" alt="images">
                                     </div>
-                                    <h4 class="text-color-1 fw-6">Nika Khanna</h4>
+                                    <h4 class="text-color-1 fw-6">Анна Телига</h4>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="box-testi">
                                 <img class="img-testi" src="{% static 'images/icon/icon-testi.png' %}" alt="images">
-                                <h5 class="text-color-4">Nemo enim ipsam voluptatem quia voluptas sit aspernatur odit
-                                    aut fugit, sed quia consequuntur magni voluptatem of sequi nesciunt. Neque porro
-                                    quisquam est,</h5>
+                                <h5 class="text-color-4">Цей товар - справжня знахідка! Він вирішив мої потреби і вказав
+                                    на високу якість. Легко використовувати та надзвичайно корисний. Я в захваті</h5>
                                 <div class="author">
                                     <div class="images-author">
                                         <img src="{% static 'images/img-box/testi-1.jpg' %}" alt="images">
                                     </div>
-                                    <h4 class="text-color-1 fw-6">Nicolas Markus</h4>
+                                    <h4 class="text-color-1 fw-6">Евгений Билетин</h4>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="box-testi">
                                 <img class="img-testi" src="{% static 'images/icon/icon-testi.png' %}" alt="images">
-                                <h5 class="text-color-4">Nemo enim ipsam voluptatem quia voluptas sit aspernatur odit
-                                    aut fugit, sed quia consequuntur magni voluptatem of sequi nesciunt. Neque porro
-                                    quisquam est,</h5>
+                                <h5 class="text-color-4">"Товар - просто диво! Я зачарована якістю і функціональністю.
+                                    Він точно відповідає опису і вартості. Рекомендую всім!"</h5>
                                 <div class="author">
                                     <div class="images-author">
                                         <img src="{% static 'images/img-box/testi-2.jpg' %}" alt="images">
                                     </div>
-                                    <h4 class="text-color-1 fw-6">Nika Khanna</h4>
+                                    <h4 class="text-color-1 fw-6">Ксения Мариченко</h4>
                                 </div>
                             </div>
                         </div>
@@ -408,10 +280,13 @@
         <div class="row">
             <div class="col-lg-12 col-md-12">
                 <div class="heading-section">
-                    <h5 class="">Our Farm</h5>
-                    <h2 class="text-unset">We Care for Nature</h2>
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                        magni </p>
+                    <h2 class="text-unset">Наш девиз</h2>
+                    <p>Наш девіз - Дружба та Добробут на кожному кроці. Ми прагнемо створити світ, де тварини та їхні
+                        господарі живуть у гармонії. Ми віримо в безмежну любов і піклування про своїх пушистих та
+                        пернатих друзів, і саме ця пристрасть вдихає життя в нашу роботу.
+                        Ми докладаємо всі можливі зусилля, щоб забезпечити вашим улюбленцям всі необхідність та радощі,
+                        та зробити процес догляду легшим і приємнішим для вас. Наш девіз підкреслює нашу відданість
+                        забезпечити їм щасливе і здорове життя, де кожен крок наповнений дружбою та добробутом.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4">
@@ -420,9 +295,8 @@
                         <img class="img" src="{% static 'images/icon/icon-8.png' %}" alt="images">
                     </div>
                     <div class="content">
-                        <h3 class="link-style-6"><a href="#">Delivery at Door Step</a></h3>
-                        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. </p>
+                        <h3 class="link-style-6"><a href="#">Швидка доставка</a></h3>
+                        <p> Написать про быструю доставку </p>
                     </div>
                 </div>
             </div>
@@ -432,9 +306,8 @@
                         <img class="img" src="{% static 'images/icon/icon-9.png' %}" alt="images">
                     </div>
                     <div class="content">
-                        <h3 class="link-style-1"><a href="#">Certified Organic Products</a></h3>
-                        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. </p>
+                        <h3 class="link-style-1"><a href="#">Только качественные товары</a></h3>
+                        <p> Описать качественные товары </p>
                     </div>
                 </div>
             </div>
@@ -444,9 +317,8 @@
                         <img class="img" src="{% static 'images/icon/icon-10.png' %}" alt="images">
                     </div>
                     <div class="content">
-                        <h3 class="link-style-6"><a href="#">Farm Fresh Produced</a></h3>
-                        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. </p>
+                        <h3 class="link-style-6"><a href="#">Надежные поставщики</a></h3>
+                        <p> Описание поставщиков </p>
                     </div>
                 </div>
             </div>
@@ -503,33 +375,6 @@
         </div>
     </div>
 </section>
+{% include 'subscribe.html' %}
 
-<section class="flat-subscribe">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-12">
-                <div class="heading-section">
-                    <h5 class="text-color-1">Subsrribe Here</h5>
-                    <h2 class="text-color-1">Subscribe To Newsletter</h2>
-                    <h4 class="fw-4 text-color-1">Duis aute irure dolor in reprehenderit in voluptate velit dolore eu
-                        fugiat nulla pariatur.</h4>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-12">
-                <div class="widget-subcribe">
-                    <div class="form-subcribe">
-                        <form id="subscribe-form" action="#" method="GET" accept-charset="utf-8"
-                              class="form-submit flex">
-                            <input name="email" value="" class="email" type="email" placeholder="Email Address"
-                                   required>
-                            <button id="submit" name="submit" type="submit">
-                                <span>Subsrcribe Now</span>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 {% endblock main %}

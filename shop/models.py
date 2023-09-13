@@ -1,6 +1,14 @@
 from django.db import models
 
 
+class Brand(models.Model):
+    name = models.CharField(max_length=50, unique=True, verbose_name='Brand name')
+    logo = models.ImageField(upload_to='images/brand', blank=True, null=True, verbose_name='Image')
+
+    def __str__(self):
+        return self.name
+
+
 class Product(models.Model):
     title = models.CharField(max_length=250, verbose_name='Title')
     slug = models.SlugField(max_length=255, unique=True, verbose_name='Slug')
@@ -10,7 +18,7 @@ class Product(models.Model):
     description = models.TextField(blank=True, verbose_name='Description')
     categories = models.ManyToManyField('Category', related_name='products')
     availability = models.BooleanField(default=True)
-
+    brand = models.ForeignKey(Brand, on_delete=models.SET_NULL, related_name='products', null=True, blank=True)
 
     class Meta:
         verbose_name = 'Product'
@@ -24,8 +32,7 @@ class Product(models.Model):
 class Image(models.Model):
     product = models.ForeignKey('shop.Product', on_delete=models.CASCADE, related_name='images')
     url = models.URLField(max_length=512, verbose_name='Image URL')
-    image = models.ImageField(upload_to='images/media', max_length=300)
-
+    image = models.ImageField(upload_to='images/product', max_length=300)
 
     def __str__(self):
         return self.image.url

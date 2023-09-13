@@ -4,8 +4,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
 <head>
     <meta charset="utf-8">
-    <title>Vikan - Organic Food Store HTML Template</title>
-    <meta name="author" content="themesflat.com">
+    <title>ZooFun - Зоомагазин</title>
+    <meta name="author" content="https://github.com/lightinger">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="{% static 'dist/font-awesome.css' %}">
     <link rel="stylesheet" href="{% static 'dist/app.css' %}">
@@ -28,33 +28,6 @@
         <div id="top-bar" class="home2 home3">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12">
-                            <div class="top-bar-right top-box flex-three">
-                                <div id="item_category" class="dropdown title-dropdown ">
-                                    <a href="#" class="btn-selector nolink ">English</a>
-                                    <ul>
-                                        <li><span>English</span></li>
-                                        <li><span>Ukrainian</span></li>
-                                        <li><span>Russian</span></li>
-                                    </ul>
-                                </div>
-                                <div id="item_category2" class="dropdown title-dropdown ">
-                                    <a href="#" class="btn-selector nolink ">USD</a>
-                                    <ul>
-                                        <li><span>USD</span></li>
-                                        <li><span>EUR</span></li>
-                                        <li><span>GRN</span></li>
-                                    </ul>
-                                </div>
-                                <div class="icon-top link-style-2">
-                                    <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -66,7 +39,7 @@
                             <div class="wrap-box relative">
                                 <div id="site-logo">
                                     <div id="site-logo-inner">
-                                        <a href="index.html" rel="home" class="main-logo">
+                                        <a href="{% url 'index' %}" rel="home" class="main-logo">
                                             <img id="logo_header" src="{% static 'images/logo/logo_new.png' %}" alt="img"
                                                  width="169" height="42">
                                         </a>
@@ -82,19 +55,16 @@
                                 <div class="header-account flex-three">
                                     <div class="register">
                                         <ul class="flex">
-                                            <li class="link-style-1"><a href="#">Login</a></li>
-                                            <li><span>/</span></li>
-                                            <li class="link-style-1"><a href="#">Register </a></li>
+                                            <li class="link-style-1"><a href="{% url 'login-register' %}">Login/Register</a></li>
                                         </ul>
                                     </div>
                                     <div class="cart-wrap header-search flex">
-                                        <a href="#" class="icon-heart"><i class="far fa-heart"></i></a>
                                         <div class="cart-box flex">
                                             <div class="relative">
-                                                <a href="#" class="cart"><i class="fas fa-shopping-basket"></i> </a>
-                                                <a href="#" class="cart-contents"><span>2</span> </a>
+                                                <a href="{% url 'cart' %}" class="cart"><i class="fas fa-shopping-basket"></i> </a>
+                                                <a href="{% url 'cart' %}" class="cart-contents"><span>2</span> </a>
                                             </div>
-                                            <a href="#" class="title-money fw-5">$1.00</a>
+                                            <a href="{% url 'cart' %}" class="title-money fw-5">$1.00</a>
                                         </div>
                                     </div>
                                 </div>

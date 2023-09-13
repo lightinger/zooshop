@@ -1145,32 +1145,5 @@
     </div>
 </section>
 
-<section class="flat-subscribe">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-12">
-                <div class="heading-section">
-                    <h5 class="text-color-1">Subsrribe Here</h5>
-                    <h2 class="text-color-1">Subscribe To Newsletter</h2>
-                    <h4 class="fw-4 text-color-1">Duis aute irure dolor in reprehenderit in voluptate velit dolore eu
-                        fugiat nulla pariatur.</h4>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-12">
-                <div class="widget-subcribe">
-                    <div class="form-subcribe">
-                        <form id="subscribe-form" action="#" method="GET" accept-charset="utf-8"
-                              class="form-submit flex">
-                            <input name="email" value="" class="email" type="email" placeholder="Email Address"
-                                   required>
-                            <button id="submit" name="submit" type="submit">
-                                <span>Subsrcribe Now</span>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+{% include 'subscribe.html' %}
 {% endblock main %}

@@ -37,3 +37,28 @@ def product(request, **kwargs):
         'product': single_product
     }
     return render(request, 'product-details.html', context=context)
+
+
+def blog(request):
+    context = {}
+    return render(request, 'blog.html', context=context)
+
+
+def blog_details(request):
+    context = {}
+    return render(request, 'blog-details.html', context=context)
+
+
+def cart(request):
+    context = {}
+    return render(request, 'cart.html', context=context)
+
+
+def login_register(request):
+    context = {}
+    return render(request, 'login-register.html', context=context)
+
+
+def checkout(request):
+    context = {}
+    return render(request, 'checkout.html', context=context)

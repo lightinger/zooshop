@@ -25,17 +25,17 @@
                 <div class="widget widget-menu style-2 ">
                     <div class="title-widget fw-6">Сторінки</div>
                     <ul class="box-menu link-style-4">
-                        <li><a href="about.html">Про нас</a></li>
-                        <li><a href="blog.html">Наш Блог</a></li>
+                        <li><a href="{% url 'about' %}">Про нас</a></li>
+                        <li><a href="{% url 'blog' %}">Наш Блог</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-2 col-md-3 col-6">
                 <div class="widget widget-menu style-3 ">
                     <ul class="box-menu link-style-4">
-                        <li><a href="shop-grid.html">Каталог</a></li>
-                        <li><a href="contact.html">Контакти</a></li>
-                        <li><a href="faq.html">Our FAQ</a></li>
+                        <li><a href="{% url 'catalog' 'zootovari' %}">Каталог</a></li>
+                        <li><a href="{% url 'contact' %}">Контакти</a></li>
+                        <li><a href="{% url 'faq' %}">Наш FAQ</a></li>
                     </ul>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                                 <h5 class="fw-6"><a href="blog-details.html">Як вибрати харчування для вашого кота</a></h5>
                                 <h6 class="days fw-4">15 Вересня, 2023</h6>
                             </div>
-                        </li>6
+                        </li>
                         <li class="hover-img flex">
                             <div class="thumb img-style ">
                                 <a href="blog-details.html"><img class="img" src="{% static 'images/blog/pots-2.jpg' %}"
@@ -68,5 +68,5 @@
             </div>
         </div>
     </div>
-    <div id="scroll-top" class="go-top"><h5 class="text-color-3"><a class=""></a> Go To Top</h5></div>
+    <div id="scroll-top" class="go-top"><h5 class="text-color-3"><a class=""></a>На верх</h5></div>
 </footer>

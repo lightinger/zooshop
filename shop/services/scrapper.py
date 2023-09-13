@@ -8,10 +8,10 @@ from django.db import transaction
 from selectolax.parser import HTMLParser
 from anyascii import anyascii
 from django.utils.text import slugify
-from shop.models import Product, Image, Category
+from shop.models import Product, Image, Category, Brand
 
 STATIC_URL = 'https://masterzoo.ua'
-base_url = "https://masterzoo.ua/ua/catalog/koti/posud-dlya-kotiv/"
+base_url = "https://masterzoo.ua/ua/catalog/koti/speczasobi-dlya-kotiv/"
 output_lock = threading.Lock()
 page_number = 1
 
@@ -48,12 +48,24 @@ def process_product_link(product_link):
         description = product_parser.css_first('.text').text(strip=True).replace("\u00A0'", "")
         categories = product_parser.css('.breadcrumbs span')
         if categories:
-            categories = [category.text(strip=True) for category in categories]
+            categories = [category.text(strip=True) for category in categories][1:]
         img = product_parser.css('.gallery__photo-img')
         if img:
             img = {i.attributes['src'] for i in img if
                    i.attributes['src'].startswith('/content')}
             images = [STATIC_URL + image for image in img]
+
+        brand = product_parser.css_first('figure a img')
+        if brand:
+            brand = brand.attributes['alt']
+        else:
+            brand = None
+
+        brand_logo = product_parser.css_first('figure a img')
+        if brand_logo:
+            brand_logo = brand_logo.attributes['src']
+        else:
+            brand_logo = None
 
         with output_lock:
             print("Название товара:", title)
@@ -62,6 +74,8 @@ def process_product_link(product_link):
             print("Артикул:", article)
             print("Описание:", description)
             print("Фото:", images)
+            print("Брэнд:", brand)
+            print("Логотип брэнда:", brand_logo)
             # print(categories)
             print('*' * 100)
 
@@ -73,10 +87,25 @@ def process_product_link(product_link):
                 'Description': description,
                 'Categories': categories,
                 'Image': images,
+                'Brand': brand,
+                'Brand logo': brand_logo,
             })
 
     except Exception as error:
         print(f"Ошибка при запросе товара по ссылке {product_link}: {error}")
+
+
+def upload_brand_logo(logo: str, brand: Brand) -> None:
+    with requests.Session() as session:
+        response = session.get(logo)
+        assert response.status_code == HTTPStatus.OK, 'Wrong status code'
+
+    file_name = f'images/brand/{slugify(anyascii(brand.name))}.jpg'
+    with open(f'media/{file_name}', 'wb') as file:
+        file.write(response.content)
+
+    brand.logo = file_name
+    brand.save()
 
 
 def upload_images(images: list[str], product: Product) -> None:
@@ -97,6 +126,17 @@ def upload_images(images: list[str], product: Product) -> None:
 
 @transaction.atomic
 def write_to_db(data: dict) -> None:
+    brand = None
+    if data['Brand']:
+        brand, _ = Brand.objects.get_or_create(
+            name=data['Brand'],
+            defaults={
+                'logo': data['Brand logo'],
+            }
+        )
+        if brand and brand.logo:
+            upload_brand_logo(data['Brand logo'], brand)
+
     product, _ = Product.objects.get_or_create(
         slug=f"{slugify(data['Title'], allow_unicode=False)}",
         defaults={
@@ -105,6 +145,7 @@ def write_to_db(data: dict) -> None:
             'old_price': data['Old price'],
             'article': data['Article'],
             'description': data['Description'],
+            'brand': brand,
         }
     )
     for category in data['Categories']:
