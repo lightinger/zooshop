@@ -80,61 +80,9 @@
         <div class="swiper-button-prev3 button-slide-custom-prev"><i class="far fa-angle-left"></i></div>
     </div>
 </section>
-<section class="tf-section2 flat-category home3">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12">
-                <div class="heading-section center">
-                    <h2>Обирай категорію</h2>
-                </div>
-                <div class="wrap-category flex">
-                    <div class="box">
-                        <div class="images"><a href="{% url 'catalog' 'zootovari' %}"><img
-                                src="{% static 'images/img-box/Category-1.png' %}" alt="images"></a></div>
-                        <div class="content">
-                            <div class="title link-style-5"><a href="{% url 'catalog' 'zootovari' %}">Товары для котов</a></div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="images"><a href="{% url 'catalog' 'zootovari' %}"><img
-                                src="{% static 'images/img-box/Category-2.png' %}" alt="images"></a></div>
-                        <div class="content">
-                            <div class="title link-style-6"><a href="{% url 'catalog' 'zootovari' %}">Товары для собак</a></div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="images"><a href="{% url 'catalog' 'zootovari' %}"><img
-                                src="{% static 'images/img-box/Category-3.png' %}" alt="images"></a></div>
-                        <div class="content">
-                            <div class="title link-style-6"><a href="{% url 'catalog' 'zootovari' %}">Товары для птиц</a></div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="images"><a href="{% url 'catalog' 'zootovari' %}"><img
-                                src="{% static 'images/img-box/Category-4.png' %}" alt="images"></a></div>
-                        <div class="content">
-                            <div class="title link-style-6"><a href="{% url 'catalog' 'zootovari' %}">Товары для рыбок</a></div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="images"><a href="{% url 'catalog' 'zootovari' %}"><img
-                                src="{% static 'images/img-box/Category-5.png' %}" alt="images"></a></div>
-                        <div class="content">
-                            <div class="title link-style-6"><a href="{% url 'catalog' 'zootovari' %}">Товары для рептилий</a></div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="images"><a href="{% url 'catalog' 'zootovari' %}"><img
-                                src="{% static 'images/img-box/Category-5.png' %}" alt="images"></a></div>
-                        <div class="content">
-                            <div class="title link-style-6"><a href="{% url 'catalog' 'zootovari' %}">Товары для грызунов</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
+{% include 'categories-for-index.html' %}
+
 <section class="flat-fresh home3">
     <div class="container">
         <div class="row">
@@ -146,7 +94,7 @@
                             <div class="sub-title link-style-3 title-30 fw-7"><a href="#">Для собак</a></div>
                             <h3 class="text-color-1"></h3>
                             <div class="meta link-style-3">
-                                <a href="{% url 'catalog' 'zootovari' %}" class="btn-button flex fw-5">ДО КАТАЛОГУ</a>
+                                <a href="{% url 'catalog' 'sobaki' %}" class="btn-button flex fw-5">ДО КАТАЛОГУ</a>
                             </div>
                         </div>
                     </div>
@@ -159,7 +107,7 @@
                         <div class="content">
                             <div class="sub-title link-style-3 title-30 fw-7"><a href="#">Для котів</a></div>
                             <div class="meta link-style-3">
-                                <a href="{% url 'catalog' 'zootovari' %}" class="btn-button flex fw-5">ДО КАТАЛОГУ</a>
+                                <a href="{% url 'catalog' 'koti' %}" class="btn-button flex fw-5">ДО КАТАЛОГУ</a>
                             </div>
                         </div>
                     </div>

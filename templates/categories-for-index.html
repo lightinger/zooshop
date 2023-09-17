@@ -1,0 +1,24 @@
+{% load static %}
+
+<section class="tf-section2 flat-category home3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="heading-section center">
+                    <h2>Обирай категорію</h2>
+                </div>
+                <div class="wrap-category flex">
+                    {% for category in categories %}
+                    <div class="box">
+                        <div class="images"><a href="{% url 'catalog' category.slug %}">
+                            <img src="{{ image.image.url }}" alt="images"></a></div>
+                        <div class="content">
+                            <div class="title link-style-5"><a href="{% url 'catalog' category.slug %}">{{ category.title }}</a></div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

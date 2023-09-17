@@ -11,7 +11,13 @@ from django.utils.text import slugify
 from shop.models import Product, Image, Category, Brand
 
 STATIC_URL = 'https://masterzoo.ua'
-base_url = "https://masterzoo.ua/ua/catalog/koti/speczasobi-dlya-kotiv/"
+page_urls = [
+    "https://masterzoo.ua/ua/catalog/terariumistika/terariumi-ta-faunariumi/",
+    "https://masterzoo.ua/ua/catalog/terariumistika/korma-harchovi-dobavki-ta-preparati/",
+    "https://masterzoo.ua/ua/catalog/terariumistika/ggnchn-napovnyuvach/",
+    "https://masterzoo.ua/ua/catalog/terariumistika/obladnannya-dlya-terariuma/",
+    "https://masterzoo.ua/ua/catalog/terariumistika/dekoracii-godivnici-groti-dlya-terariuma/",
+]
 output_lock = threading.Lock()
 page_number = 1
 
@@ -55,20 +61,21 @@ def process_product_link(product_link):
                    i.attributes['src'].startswith('/content')}
             images = [STATIC_URL + image for image in img]
 
-        brand = product_parser.css_first('figure a img')
+        brand = product_parser.css_first('.gallery__product-logo')
         if brand:
-            brand = brand.attributes['alt']
+            brand = brand.attributes['href'].replace('/', '').replace('ua', '').replace('224', '')
         else:
             brand = None
 
-        brand_logo = product_parser.css_first('figure a img')
+        brand_logo = product_parser.css_first('.gallery__product-logo')
         if brand_logo:
-            brand_logo = brand_logo.attributes['src']
+            brand_logo = STATIC_URL + brand_logo.css_first('img').attributes['src']
         else:
             brand_logo = None
 
         with output_lock:
             print("Название товара:", title)
+            print("Категории:", categories)
             print("Цена товара:", price)
             print("Старая цена товара:", old_price)
             print("Артикул:", article)
@@ -95,7 +102,8 @@ def process_product_link(product_link):
         print(f"Ошибка при запросе товара по ссылке {product_link}: {error}")
 
 
-def upload_brand_logo(logo: str, brand: Brand) -> None:
+# def upload_brand_logo(logo: str, brand: Brand) -> None:
+def upload_brand_logo(logo: str, brand: Brand):
     with requests.Session() as session:
         response = session.get(logo)
         assert response.status_code == HTTPStatus.OK, 'Wrong status code'
@@ -150,7 +158,7 @@ def write_to_db(data: dict) -> None:
     )
     for category in data['Categories']:
         category, _ = Category.objects.get_or_create(
-            slug=f"{slugify(category, allow_unicode=False)}",
+            slug=f"{slugify(anyascii(category), allow_unicode=False)}",
             defaults={
                 'title': category}
         )
@@ -161,18 +169,20 @@ def write_to_db(data: dict) -> None:
 
 
 def main():
-    global page_number
-    while True:
-        page_url = f"{base_url}?page={page_number}"
-        product_links = get_product_links(page_url)
+    for page_url in page_urls:
+        global page_number
+        page_number = 1
+        while True:
+            page_url_with_page_number = f"{page_url}?page={page_number}"
+            product_links = get_product_links(page_url_with_page_number)
 
-        if not product_links:
-            break
+            if not product_links:
+                break
 
-        with ThreadPoolExecutor(max_workers=3) as executor:
-            executor.map(process_product_link, product_links)
+            with ThreadPoolExecutor(max_workers=3) as executor:
+                executor.map(process_product_link, product_links)
 
-        page_number += 1
+            page_number += 1
 
 if __name__ == "__main__":
     main()

@@ -2,18 +2,7 @@
 {% load static %}
 {% block main %}
 
-<section class="flat-title-page inner">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="page-title-heading center">
-                    <h2 class="heading">Product Details</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 <section class="tf-section flat-shop-details">
     <div class="container">
         <div class="row">
@@ -164,15 +153,9 @@
                                 <a class="btn-quantity minus-btn"><i class="far fa-minus"></i></a>
                             </div>
                         </div>
-                        <div class="tf-buttons"><a href="#">Add To Cart</a></div>
+                        <div class="tf-buttons"><a href="{% url 'basket_add' product.id %}">Add To Cart</a></div>
                     </div>
-                    <div class="tf-buttons style"><a href="#">Buy It Now</a></div>
-                    <div class="icon-box flex">
-                        <div class="icon icon-1 link-style-1"><a href="#"><i class="far fa-heart"></i>Add to
-                            wishlist</a></div>
-                        <div class="icon icon-2 link-style-1"><a href="#"><i class="fas fa-compress-arrows-alt"></i>Compare</a>
-                        </div>
-                    </div>
+
                     <div class="title-box flex-three"><h5 class="fw-6">Category :</h5><h6 class="fw-4 text-color-4">
                         Green Vegetables</h6></div>
                     <div class="title-box style flex-three"><h5 class="fw-6">Tags :</h5><h6 class="fw-4 text-color-4">

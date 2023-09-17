@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+
+<div class="side-menu-overlay"></div>
+
+<!-- Cart Section Start -->
+<div class="page-section cart section mt-100 mb-60 mt-xs-70 mb-xs-30">
+    <div class="container">
+        <form id="cart-form" action="basket.html#">
+            <div class="row">
+                <div class="col-12">
+                    <div class="cart-table table-responsive mb-40">
+                        {% for items in basket_items %}
+                        <table id="cart-table">
+                            <thead>
+                                <tr>
+                                    <th class="pro-thumbnail">Image</th>
+                                    <th class="pro-title">Title</th>
+                                    <th class="pro-price">Price</th>
+                                    <th class="pro-quantity">Quantity</th>
+                                    <th class="pro-subtotal">Total price</th>
+                                    <th class="pro-remove">Remove</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="pro-thumbnail"><a href="basket.html#"><img src="{{ items.product.images.first.image.url }}" alt="Product Image" /></a></td>
+                                    <td class="pro-title"><a href="#">{{ items.product.title }}</a></td>
+                                    <td class="pro-price"><span class="amount">{{ items.product.price }} грн</span></td>
+                                    <td class="pro-quantity"><div class="product-quantity"><input type="text" value="{{ items.quantity }}" /></div></td>
+                                    <td class="pro-subtotal">{{ items.subtotal }} грн</td>
+                                    <td class="pro-remove"><a href="basket.html#">Remove</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        {% endfor%}
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-7 col-12">
+                    <div class="cart-buttons mb-30">
+                        <a href="basket.html#">Continue Shopping</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 col-12">
+                    <div class="cart-total fix mb-40">
+                        <h3>Total amount</h3>
+                        <table id="cart-totals">
+                            <tbody>
+                                <tr class="order-total">
+                                    <td>
+                                        <strong><span class="amount">Общее колличество товаров составило {{ total_quantity }} шт. на общую сумму {{ total_amount }}</span></strong>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="proceed-to-checkout section mt-30">
+                            <a href="basket.html#">Proceed to Checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- Cart Section End -->
+
+{% include 'subscribe.html' %}
+{% endblock main %}
