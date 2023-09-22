@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+
 {% block main %}
 <section class="flat-title-page inner">
     <div class="overlay"></div>
@@ -7,15 +8,16 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="page-title-heading center">
-                    <h2 class="heading">Каталог</h2>
-                    <div class="title-inner link-style-3">
-                        <h5 class=""><a class="home fw-4" href="index.html">Home</a><span>Каталог</span></h5>
-                    </div>
+                    <h2 class="heading">Результаты поиска</h2>
+                    {% if query %}
+                        <p>Результаты по запросу: "{{ query }}"</p>
+                    {% endif %}
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 <section class="tf-section flat-shop-sidebar style-left">
     <div class="container">
         <div class="row">
@@ -28,31 +30,31 @@
                                 <div class="progress-bar"></div>
                             </div>
                             {% for category in categories %}
-                            <ul>
-                                <li class="active">
-                                    <h5><a href="{% url 'catalog' category.slug %}">{{ category.title }}</a><span></span></h5>
-                                </li>
-
-                            </ul>
+                                <ul>
+                                    <li class="active">
+                                        <h5><a href="{% url 'catalog' category.slug %}">{{ category.title }}</a><span>{{ category_product_counts }}</span></h5>
+                                    </li>
+                                </ul>
                             {% endfor %}
                         </div>
                     </div>
                 </aside>
             </div>
+
             <div class="col-lg-9 col-md-12 col-sm-12">
                 <div class="post">
                     <div class="category-filter flex-two">
                         <div class="box-1">
-                            <h5>Показано товаров 1–12</h5>
+                            <h5>Показано товаров {{ products.start_index }}–{{ products.end_index }} из {{ products.paginator.count }}</h5>
                         </div>
                         <div class="box-2 flex">
                             <div id="item_category2" class="dropdown titles-dropdown">
-                            <a href="#" class="btn-selector nolink">Все продукты</a>
-                            <ul>
-                                <li><a href="?sort=price_low_to_high">Сначала дешевые</a></li>
-                                <li><a href="?sort=price_high_to_low">Сначала дорогие</a></li>
-                            </ul>
-                        </div>
+                                <a href="#" class="btn-selector nolink">Все продукты</a>
+                                <ul>
+                                    <li><a href="?s={{ query }}&sort=price_low_to_high">Сначала дешевые</a></li>
+                                    <li><a href="?s={{ query }}&sort=price_high_to_low">Сначала дорогие</a></li>
+                                </ul>
+                            </div>
                             <a href="#" class="btn-view grid active"><i class="fas fa-th"></i></a>
                             <a href="#" class="btn-view list"><i class="fas fa-list-ul"></i></a>
                         </div>
@@ -61,17 +63,17 @@
                     <div class="flat-vegetables">
                         <div class="wrap-vegetables flex">
                             {% for product in products %}
-                            {% include 'listing-product.html' %}
+                                {% include 'listing-product.html' %}
                             {% endfor %}
                         </div>
                     </div>
-
                 </div>
             </div>
-            {% include 'pagination.html' %}
         </div>
+        {% include 'pagination.html' %}
     </div>
 </section>
 
-{% include 'subscribe.html' %}
+
+
 {% endblock main %}

@@ -11,7 +11,6 @@
             <div class="row">
                 <div class="col-12">
                     <div class="cart-table table-responsive mb-40">
-                        {% for items in basket_items %}
                         <table id="cart-table">
                             <thead>
                                 <tr>
@@ -21,9 +20,9 @@
                                     <th class="pro-quantity">Quantity</th>
                                     <th class="pro-subtotal">Total price</th>
                                     <th class="pro-remove">Remove</th>
-
                                 </tr>
                             </thead>
+                            {% for items in basket_items %}
                             <tbody>
                                 <tr>
                                     <td class="pro-thumbnail"><a href="basket.html#"><img src="{{ items.product.images.first.image.url }}" alt="Product Image" /></a></td>
@@ -31,16 +30,17 @@
                                     <td class="pro-price"><span class="amount">{{ items.product.price }} грн</span></td>
                                     <td class="pro-quantity"><div class="product-quantity"><input type="text" value="{{ items.quantity }}" /></div></td>
                                     <td class="pro-subtotal">{{ items.subtotal }} грн</td>
-                                    <td class="pro-remove"><a href="basket.html#">Remove</a></td>
+                                    <td class="pro-remove"><a href="{% url 'basket_remove' items.product_id %}">Remove</a></td>
                                 </tr>
                             </tbody>
+                               {% endfor%}
                         </table>
-                        {% endfor%}
+
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-7 col-12">
                     <div class="cart-buttons mb-30">
-                        <a href="basket.html#">Continue Shopping</a>
+                        <a href="{% url 'catalog' 'zootovari' %}">Continue Shopping</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-5 col-12">
@@ -50,7 +50,7 @@
                             <tbody>
                                 <tr class="order-total">
                                     <td>
-                                        <strong><span class="amount">Общее колличество товаров составило {{ total_quantity }} шт. на общую сумму {{ total_amount }}</span></strong>
+                                        <strong><span class="amount">Общее колличество товаров составило {{ total_quantity }} шт. на общую сумму {{ total_amount }} грн</span></strong>
                                     </td>
                                 </tr>
                             </tbody>

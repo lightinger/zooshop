@@ -166,9 +166,23 @@
                         <div id="comments" class="comments">
                             <div id="respond" class="respond-comment">
                                 <h2 class="fw-7">Оставьте ваш отзыв</h2>
+                                {% if messages %}
+                                {% for message in messages %}
+                                {% if message.tags == 'success' %}
+                                <div class="alert alert-success" role="alert">
+                                    {{ message }}
+                                </div>
+                                {% else %}
+                                <div class="alert alert-danger" role="alert">
+                                    {{ message }}
+                                </div>
+                                {% endif %}
+                                {% endfor %}
+                                {% endif %}
                                 <form method="post" id="contactform" class="comment-form form-submit"
-                                      action="./contact/contact-process.php" accept-charset="utf-8"
+                                      action="" accept-charset="utf-8"
                                       novalidate="novalidate">
+                                    {% csrf_token %}
                                     <div class="text-wrap clearfix">
                                         <fieldset class="name-wrap style-text">
                                             <input type="text" id="name" class="tb-my-input" name="name" tabindex="1"
@@ -181,11 +195,6 @@
                                                    required="">
                                         </fieldset>
                                     </div>
-                                    <fieldset class="website-wrap">
-                                        <input type="url" id="text" class="tb-my-input" name="text" tabindex="2"
-                                               placeholder="Тема" value="" size="32" aria-required="true"
-                                               required="">
-                                    </fieldset>
                                     <fieldset class="message-wrap">
                                         <textarea id="comment-message" name="message" rows="6" tabindex="5"
                                                   placeholder="Сообщение" aria-required="true"></textarea>
@@ -195,13 +204,13 @@
                                                 class="blob-btn btn-style">
                                             Отправить
                                             <span class="blob-btn__inner">
-<span class="blob-btn__blobs">
-<span class="blob-btn__blob"></span>
-<span class="blob-btn__blob"></span>
-<span class="blob-btn__blob"></span>
-<span class="blob-btn__blob"></span>
-</span>
-</span>
+                                            <span class="blob-btn__blobs">
+                                            <span class="blob-btn__blob"></span>
+                                            <span class="blob-btn__blob"></span>
+                                            <span class="blob-btn__blob"></span>
+                                            <span class="blob-btn__blob"></span>
+                                            </span>
+                                            </span>
                                         </button>
                                     </div>
                                 </form>

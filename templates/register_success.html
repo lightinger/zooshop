@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+
+<section class="flat-title-page inner">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-title-heading center">
+                    <h2 class="heading ">Спасибо за регистрацию</h2>
+                    <div class="title-inner link-style-3">
+                        <h5 class=""><a class="home fw-4" href="{% url 'catalog' 'zootovari' %}">Начать покупки</a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include 'subscribe.html' %}
+{% endblock main %}

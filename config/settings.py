@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 
     'users',
     'shop',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
@@ -143,3 +144,9 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'users.User'
+
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = '8b6378c648378b'
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+EMAIL_PORT = '2525'
+DEFAULT_FROM_EMAIL = 'zooshop@gmail.com'

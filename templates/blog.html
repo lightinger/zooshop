@@ -22,7 +22,7 @@
          <div class="row">
              <div class="col-lg-4 col-md-6 col-sm-12">
                  <div class="blog-box tf-img hover-img hv-one">
-                     <a class="media img-style" href="blog-details.html">
+                     <a class="media img-style" href="{% url 'blog-details' %}">
                          <img alt="" class="img-item" src="{% static 'images/blog/blog-1.jpg' %}">
                          <span class="hover-one"></span>
                      </a>
@@ -51,9 +51,7 @@
                              <div class="number">10</div>
                              <div class="titles">June</div>
                          </div>
-                         <h4><a href="blog-details.html">Farming</a></h4>
-                         <h3><a href="blog-details.html">Quality Foods Requirments
-                             For Every Human Body’s</a></h3>
+                         <h4><a href="{% url 'blog-details' %}">Farming</a></h4>
                          <p>Nemo enim ipsam voluptatem luptas sit aspernatur aut odit aut fugit,</p>
                          <div class="meta flex-one">
                              <a class="btn-button flex fw-5" href="blog-details.html">Read More</a>
@@ -150,19 +148,7 @@
                      </div>
                  </div>
              </div>
-             <div class="col-lg-12">
-                 <div class="themesflat-pagination clearfix center">
-                     <ul>
-                         <li><a class="page-numbers style" href="#"><i class="far fa-angle-left"></i></a></li>
-                         <li><a class="page-numbers" href="#">1</a></li>
-                         <li><a class="page-numbers current" href="#">2</a></li>
-                         <li><a class="page-numbers" href="#">3</a></li>
-                         <li><a class="page-numbers" href="#">4</a></li>
-                         <li><a class="page-numbers" href="#">5</a></li>
-                         <li><a class="page-numbers style" href="#"><i class="far fa-angle-right"></i></a></li>
-                     </ul>
-                 </div>
-             </div>
+             {% include 'pagination.html' %}
          </div>
      </div>
  </section>

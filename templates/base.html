@@ -46,12 +46,13 @@
                                     </div>
                                 </div>
                                 <div class="search-header search">
-                                    <form action="#" method="get" role="search" class="search-form">
+                                    <form action="{% url 'search' %}" method="get" role="search" class="search-form">
                                         <input type="search" class="search-field" placeholder="Знайдіть потрібний продукт"
                                                value="" name="s" title="Search for" required="">
                                         <button class="search-icon search-submit" type="submit" title="Search"></button>
                                     </form>
                                 </div>
+
                                 <div class="header-account flex-three">
                                     <div class="register">
                                         <ul class="flex">
@@ -61,10 +62,10 @@
                                     <div class="cart-wrap header-search flex">
                                         <div class="cart-box flex">
                                             <div class="relative">
-                                                <a href="#" class="cart"><i class="fas fa-shopping-basket"></i> </a>
-                                                <a href="#" class="cart-contents"><span>2</span> </a>
+                                                <a href="{% url 'basket' %}" class="cart"><i class="fas fa-shopping-basket"></i> </a>
+                                                <a href="{% url 'basket' %}" class="cart-contents"><span>{{ total_quantity }}</span> </a>
                                             </div>
-                                            <a href="#" class="title-money fw-5">$1.00</a>
+                                            <a href="{% url 'basket' %}" class="title-money fw-5">{{ total_amount }} грн</a>
                                         </div>
                                     </div>
                                 </div>
@@ -117,7 +118,7 @@
 </div>
 
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script data-cfasync="false" src="{% static 'js/email-decode.min.js' %}"></script>
 <script src="{% static 'js/jquery.min.js' %}"></script>
 <script src="{% static 'js/jquery.easing.js' %}"></script>
 <script src="{% static 'js/countto.js' %}"></script>
@@ -130,5 +131,6 @@
 <script src="{% static 'js/plugin.js' %}"></script>
 <script src="{% static 'js/shortcodes.js' %}"></script>
 <script src="{% static 'js/main.js' %}"></script>
+<!--<script src="{% static 'js/basket.js' %}"></script>-->
 </body>
 </html>

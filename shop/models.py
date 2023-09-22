@@ -1,5 +1,5 @@
 from django.db import models
-
+from .abstract_models import Subscribable
 from users.models import User
 
 
@@ -57,3 +57,17 @@ class Basket(models.Model):
     product = models.ForeignKey(to=Product, on_delete=models.CASCADE)
     quantity = models.PositiveSmallIntegerField(default=0)
     created_timestamp = models.DateTimeField(auto_now_add=True)
+
+
+class Subscribe(Subscribable):
+
+    def __str__(self):
+        return self.email
+
+
+class Contact(Subscribable):
+    name = models.CharField(max_length=50)
+    message = models.CharField(max_length=1000)
+
+    def __str__(self):
+        return self.name

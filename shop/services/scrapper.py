@@ -12,11 +12,7 @@ from shop.models import Product, Image, Category, Brand
 
 STATIC_URL = 'https://masterzoo.ua'
 page_urls = [
-    "https://masterzoo.ua/ua/catalog/terariumistika/terariumi-ta-faunariumi/",
-    "https://masterzoo.ua/ua/catalog/terariumistika/korma-harchovi-dobavki-ta-preparati/",
-    "https://masterzoo.ua/ua/catalog/terariumistika/ggnchn-napovnyuvach/",
-    "https://masterzoo.ua/ua/catalog/terariumistika/obladnannya-dlya-terariuma/",
-    "https://masterzoo.ua/ua/catalog/terariumistika/dekoracii-godivnici-groti-dlya-terariuma/",
+    "https://masterzoo.ua/ua/catalog/koti/grashki-dlya-kotv"
 ]
 output_lock = threading.Lock()
 page_number = 1

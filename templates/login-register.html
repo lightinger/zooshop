@@ -26,21 +26,14 @@
             <div class="col-lg-4 col-12 mb-40">
                 <div class="login-register-form-wrap">
                     <h3>Login</h3>
-                    <form action="login-register.html#" class="mb-30">
+                    <form action="{% url 'login-register' %}" method="post" class="mb-30">
+                        {% csrf_token %}
                         <div class="row">
-                            <div class="col-12 mb-15"><input type="text" placeholder="Username or Email"></div>
-                            <div class="col-12 mb-15"><input type="password" placeholder="Password"></div>
-                            <div class="col-12"><input type="submit" value="Login"></div>
+                            <div class="col-12 mb-15"><input type="text" name="email" placeholder="Email" required></div>
+                            <div class="col-12 mb-15 standard"><input type="password" name="password" placeholder="Password" required></div>
+                            <div class="col-12" style="height: 35px"><input type="submit" name="submit_button" value="Login"></div>
                         </div>
                     </form>
-                    <h4>You can also login with...</h4>
-                    <div class="social-login">
-                        <a href="login-register.html#"><i class="fa fa-facebook"></i></a>
-                        <a href="login-register.html#"><i class="fa fa-twitter"></i></a>
-                        <a href="login-register.html#"><i class="fa fa-google-plus"></i></a>
-                        <a href="login-register.html#"><i class="fa fa-pinterest"></i></a>
-                        <a href="login-register.html#"><i class="fa fa-linkedin"></i></a>
-                    </div>
                 </div>
             </div>
 
@@ -51,14 +44,16 @@
             <div class="col-lg-6 col-12 mb-40 ml-auto">
                 <div class="login-register-form-wrap">
                     <h3>Register</h3>
-                    <form action="login-register.html#">
+                    <form method="post" action="{% url 'login-register' %}">
+                    {% csrf_token %}
                         <div class="row">
-                            <div class="col-md-6 col-12 mb-15"><input type="text" placeholder="Your Name"></div>
-                            <div class="col-md-6 col-12 mb-15"><input type="text" placeholder="User Name"></div>
-                            <div class="col-md-6 col-12 mb-15"><input type="email" placeholder="Email"></div>
-                            <div class="col-md-6 col-12 mb-15"><input type="password" placeholder="Password"></div>
-                            <div class="col-md-6 col-12 mb-15"><input type="password" placeholder="Confirm Password"></div>
-                            <div class="col-md-6 col-12"><input type="submit" value="Register"></div>
+<!--                            <div class="col-md-6 col-12 mb-15"><input type="text" placeholder="Your Name"></div>-->
+                            <div class="col-md-6 col-12 mb-15 standard"><input type="email" name="email" placeholder="Email" required></div>
+                            <div class="col-md-6 col-12 mb-15"><input type="password" name="password1" placeholder="Password" required></div>
+<!--                            <div class="col-md-6 col-12 mb-15"><input type="text" placeholder="User Name"></div>-->
+                            <div class="col-md-6 col-12 mb-15 standard"><input type="password" name="password2" placeholder="Confirm Password" required></div>
+
+                            <div class="col-md-6 col-12"><input type="submit" name="submit_button" value="Register"></div>
                         </div>
                     </form>
                 </div>

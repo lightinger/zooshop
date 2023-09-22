@@ -1099,9 +1099,8 @@ header {
 /* Page Title Inner
 -------------------------------------------------------------- */
 .flat-title-page.inner {
-  padding: 176px 0 179px 0px;
+  padding: 100px 0;
   position: relative;
-  background-image: url(../../assets/images/section/img-page-blog.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1253,7 +1252,7 @@ header {
 }
 
 .meta .btn-button {
-  font-size: 18px;
+  font-size: 26px;
   line-height: 28px;
   font-weight: 600;
   -webkit-transition: all 0.3s ease;
@@ -4014,7 +4013,7 @@ header {
 .category-filter .dropdown a {
   color: #000;
   position: relative;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
   width: 220px;
   height: 46px;
@@ -4022,6 +4021,9 @@ header {
   color: #666666;
   letter-spacing: -0.1px;
   padding: 11px 20px;
+}
+.category-filter .dropdown li a{
+  width: inherit;
 }
 .category-filter .dropdown a::after {
   font-size: 14px;
@@ -5928,7 +5930,7 @@ html {
 }
 
 body {
-  font-family: "League Spartan", sans-serif;
+ font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
@@ -5996,14 +5998,15 @@ input[type=color] {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 26px;
   border-radius: 4px;
   padding: 13px 15px 13px 27px;
   width: 100%;
   background: #F6F6F6;
-  color: #fff;
+
 }
+
 
 textarea::placeholder,
 input[type=text]::placeholder,
@@ -6020,23 +6023,11 @@ input[type=url]::placeholder,
 input[type=search]::placeholder,
 input[type=tel]::placeholder,
 input[type=color]::placeholder {
-  font-family: "League Spartan", sans-serif;
-  font-size: 16px;
   line-height: 26px;
-  color: #fff;
-}
-
-/* Placeholder color */
-::-webkit-input-placeholder {
-  color: #8A8AA0;
-}
-
-:-moz-placeholder {
-  color: #8A8AA0;
+  color: #000;
 }
 
 ::-moz-placeholder {
-  color: #8A8AA0;
   opacity: 1;
 }
 
@@ -6094,7 +6085,7 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 20px;
 }
 
@@ -6104,7 +6095,7 @@ h4 {
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
 }
 
@@ -6229,10 +6220,6 @@ button {
 .title-36 {
   font-size: 36px;
   line-height: 40px;
-}
-
-.font {
-  font-family: "League Spartan", sans-serif;
 }
 
 .font-2 {
@@ -6770,7 +6757,6 @@ a:focus, a:hover {
 }
 .heading-section h2 {
   font-weight: 700;
-  text-transform: capitalize;
 }
 .heading-section.style {
   margin-bottom: 24px;
@@ -7009,6 +6995,45 @@ a:focus, a:hover {
 
 .pro-remove a:hover {
   text-decoration: underline;
+}
+
+.login-register-form-wrap h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 13px;
+}
+
+.login-register-form-wrap form {
+  margin: 10px 0;
+}
+
+.login-register-form-wrap form input, .login-register-form-wrap form textarea{
+    border: 1px solid #45ab49;
+    border-radius: 6px;
+}
+
+.login-register-form-wrap form [type="submit"] {
+  margin-top: 10px;
+  padding: 5px 17px;
+  background-color: #45ab49;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+.login-register-form-wrap form [type="submit"]:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid;
+}
+
+.login-register-form-wrap form .row div {
+  margin-bottom: 20px;
+}
+
+.login-register-form-wrap form .row div.standard {
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=app.css.map */

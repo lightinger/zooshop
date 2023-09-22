@@ -11,7 +11,7 @@
                     {% for category in categories %}
                     <div class="box">
                         <div class="images"><a href="{% url 'catalog' category.slug %}">
-                            <img src="{{ image.image.url }}" alt="images"></a></div>
+                            <img src="{{ category.image.url }}" alt="images"></a></div>
                         <div class="content">
                             <div class="title link-style-5"><a href="{% url 'catalog' category.slug %}">{{ category.title }}</a></div>
                         </div>

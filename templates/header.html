@@ -14,7 +14,7 @@
                                     <a href="{% url 'index' %}">Главная</a>
                                 </li>
                                 <li class="menu-item menu-item-has-children">
-                                    <a href="#">Магазин</a>
+                                    <a href="{% url 'catalog' 'zootovari' %}">Магазин</a>
                                     <ul class="sub-menu ">
                                         {% for category in categories%}
                                         <li class="menu-item"><a href="{% url 'catalog' category.slug %}">{{ category.title }}</a></li>

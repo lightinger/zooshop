@@ -77,3 +77,43 @@ https://masterzoo.ua/ua/catalog/terariumistika/dekoracii-godivnici-groti-dlya-te
 
 def __str__(self):
     return f'Корзина для {self.user.email} | Продукт: {self.product.name}'
+
+171.33 x 143
+
+
+
+
+class ContactUsView(FormView):
+    template_name = 'contact.html'
+    model = Contact
+    success_url = '/contact-us/'
+    form_class = ContactForm
+
+    def form_valid(self, form):
+        contact, _ = Contact.objects.get_or_create(
+            email=form.cleaned_data['email'],
+            defaults={
+                'name': form.cleaned_data['name'],
+                'message': form.cleaned_data['message']
+            }
+        )
+        send_email(
+            subject='Thank you for your message!',
+            to_email=[contact.email],
+            message=f'Thank you for your message! {contact.name.title()}'
+        )
+        messages.add_message(
+            self.request,
+            messages.SUCCESS,
+            'message: ' f"Thank you {form.cleaned_data.get('name').upper()} for your massage"
+        )
+        return super().form_valid(form)
+
+    def form_invalid(self, form):
+        print(form.errors)
+        messages.add_message(
+            self.request,
+            messages.WARNING,
+            form.errors
+        )
+        return super().form_invalid(form)
